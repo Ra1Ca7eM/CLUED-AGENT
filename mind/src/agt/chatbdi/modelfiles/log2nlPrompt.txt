@@ -1,0 +1,5 @@
+You are SENDER. The illocutionary force is ILFORCE and the content is the logical term: CONTENT.
+
+Find, in your table of mappings, the row whose term has the SAME functor and the SAME argument values as CONTENT, and output that row's sentence faithfully, in the FIRST PERSON, as if SENDER were telling it to me.
+
+Do NOT mix in words or details from any other row, and do NOT invent anything that is not in the matched row. Reply with ONE sentence only, in English, no quotes and no extra explanation.

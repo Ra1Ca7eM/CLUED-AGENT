@@ -1,0 +1,11 @@
+Model Information:
+* title:	simple umbrellas and a classic umbrella stand
+* source:	https://sketchfab.com/3d-models/simple-umbrellas-and-a-classic-umbrella-stand-7e9ab065b38c4222a7f9e0f07284ec15
+* author:	lupas (https://sketchfab.com/ivan.anton.albarracin)
+
+Model License:
+* license type:	CC-BY-4.0 (http://creativecommons.org/licenses/by/4.0/)
+* requirements:	Author must be credited. Commercial use is allowed.
+
+If you use this 3D model in your project be sure to copy paste this credit wherever you share it:
+This work is based on "simple umbrellas and a classic umbrella stand" (https://sketchfab.com/3d-models/simple-umbrellas-and-a-classic-umbrella-stand-7e9ab065b38c4222a7f9e0f07284ec15) by lupas (https://sketchfab.com/ivan.anton.albarracin) licensed under CC-BY-4.0 (http://creativecommons.org/licenses/by/4.0/)

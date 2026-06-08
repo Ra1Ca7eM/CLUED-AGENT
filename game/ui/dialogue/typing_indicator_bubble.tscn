@@ -1,0 +1,39 @@
+[gd_scene load_steps=4 format=3 uid="uid://c8dialoguetyping01"]
+
+[ext_resource type="Script" uid="uid://lb5jvjjsqjqr" path="res://scripts/ui/typing_indicator_bubble.gd" id="1_typing"]
+[ext_resource type="StyleBoxFlat" path="res://ui/dialogue/styles/typing_bubble.tres" id="2_panel"]
+[ext_resource type="StyleBoxFlat" path="res://ui/dialogue/styles/typing_dot.tres" id="3_dot"]
+
+[node name="TypingIndicatorBubble" type="PanelContainer"]
+theme_override_styles/panel = ExtResource("2_panel")
+script = ExtResource("1_typing")
+
+[node name="DotArea" type="Control" parent="."]
+custom_minimum_size = Vector2(48, 28)
+layout_mode = 2
+
+[node name="Dot1" type="Panel" parent="DotArea"]
+unique_name_in_owner = true
+layout_mode = 0
+offset_top = 9.0
+offset_right = 10.0
+offset_bottom = 19.0
+theme_override_styles/panel = ExtResource("3_dot")
+
+[node name="Dot2" type="Panel" parent="DotArea"]
+unique_name_in_owner = true
+layout_mode = 0
+offset_left = 16.0
+offset_top = 9.0
+offset_right = 26.0
+offset_bottom = 19.0
+theme_override_styles/panel = ExtResource("3_dot")
+
+[node name="Dot3" type="Panel" parent="DotArea"]
+unique_name_in_owner = true
+layout_mode = 0
+offset_left = 32.0
+offset_top = 9.0
+offset_right = 42.0
+offset_bottom = 19.0
+theme_override_styles/panel = ExtResource("3_dot")

@@ -1,0 +1,46 @@
+[gd_scene format=3 uid="uid://io01ok7yficw"]
+
+[ext_resource type="PackedScene" uid="uid://bxbpf8qmwa3r1" path="res://MODELLI3D/Kenney_forniture/GLTF format/floorFull.glb" id="1_hty77"]
+[ext_resource type="PackedScene" uid="uid://bsf3egs4hxrql" path="res://MODELLI3D/Kenney_forniture/GLTF format/rugRectangle.glb" id="2_0dxu5"]
+
+[sub_resource type="ConcavePolygonShape3D" id="ConcavePolygonShape3D_0dxu5"]
+data = PackedVector3Array(0, 0.049999997, -1, 0, 0.049999997, 0, 0, 0, 0, 0, 0, 0, 0, 0, -1, 0, 0.049999997, -1, 1, 0.049999997, 0, 0, 0.049999997, 0, 0, 0.049999997, -1, 0, 0.049999997, -1, 1, 0.049999997, -1, 1, 0.049999997, 0, 1, 0, -1, 0, 0, -1, 0, 0, 0, 0, 0, 0, 1, 0, 0, 1, 0, -1, 0, 0.049999997, -1, 0, 0, -1, 1, 0, -1, 1, 0, -1, 1, 0.049999997, -1, 0, 0.049999997, -1, 1, 0.049999997, 0, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0.049999997, 0, 1, 0.049999997, 0, 1, 0, -1, 1, 0, 0, 1, 0.049999997, 0, 1, 0.049999997, 0, 1, 0.049999997, -1, 1, 0, -1)
+
+[sub_resource type="ConcavePolygonShape3D" id="ConcavePolygonShape3D_5t5xq"]
+data = PackedVector3Array(0, 0.049999997, -1, 0, 0.049999997, 0, 0, 0, 0, 0, 0, 0, 0, 0, -1, 0, 0.049999997, -1, 1, 0.049999997, 0, 0, 0.049999997, 0, 0, 0.049999997, -1, 0, 0.049999997, -1, 1, 0.049999997, -1, 1, 0.049999997, 0, 1, 0, -1, 0, 0, -1, 0, 0, 0, 0, 0, 0, 1, 0, 0, 1, 0, -1, 0, 0.049999997, -1, 0, 0, -1, 1, 0, -1, 1, 0, -1, 1, 0.049999997, -1, 0, 0.049999997, -1, 1, 0.049999997, 0, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0.049999997, 0, 1, 0.049999997, 0, 1, 0, -1, 1, 0, 0, 1, 0.049999997, 0, 1, 0.049999997, 0, 1, 0.049999997, -1, 1, 0, -1)
+
+[sub_resource type="ConcavePolygonShape3D" id="ConcavePolygonShape3D_a4imk"]
+data = PackedVector3Array(0, 0.049999997, -1, 0, 0.049999997, 0, 0, 0, 0, 0, 0, 0, 0, 0, -1, 0, 0.049999997, -1, 1, 0.049999997, 0, 0, 0.049999997, 0, 0, 0.049999997, -1, 0, 0.049999997, -1, 1, 0.049999997, -1, 1, 0.049999997, 0, 1, 0, -1, 0, 0, -1, 0, 0, 0, 0, 0, 0, 1, 0, 0, 1, 0, -1, 0, 0.049999997, -1, 0, 0, -1, 1, 0, -1, 1, 0, -1, 1, 0.049999997, -1, 0, 0.049999997, -1, 1, 0.049999997, 0, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0.049999997, 0, 1, 0.049999997, 0, 1, 0, -1, 1, 0, 0, 1, 0.049999997, 0, 1, 0.049999997, 0, 1, 0.049999997, -1, 1, 0, -1)
+
+[node name="Corridoio" type="Node3D" unique_id=59731640]
+
+[node name="floorFull" parent="." unique_id=1055655692 instance=ExtResource("1_hty77")]
+transform = Transform3D(3, 0, 0, 0, 3, 0, 0, 0, 3, -1.7500001, 0, 1.25)
+
+[node name="StaticBody3D" type="StaticBody3D" parent="floorFull/floorFull(Clone)" parent_id_path=PackedInt32Array(1055655692, 2068004304) index="0" unique_id=1648240836]
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="floorFull/floorFull(Clone)/StaticBody3D" unique_id=1561059699]
+shape = SubResource("ConcavePolygonShape3D_0dxu5")
+
+[node name="floorFull2" parent="." unique_id=161091833 instance=ExtResource("1_hty77")]
+transform = Transform3D(3, 0, 0, 0, 3, 0, 0, 0, 3, -19.5, 0, 1.25)
+
+[node name="StaticBody3D" type="StaticBody3D" parent="floorFull2/floorFull(Clone)" parent_id_path=PackedInt32Array(161091833, 2068004304) index="0" unique_id=1444589152]
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="floorFull2/floorFull(Clone)/StaticBody3D" unique_id=1260583804]
+shape = SubResource("ConcavePolygonShape3D_5t5xq")
+
+[node name="Floor_R0_C0" parent="." unique_id=511581626 instance=ExtResource("1_hty77")]
+transform = Transform3D(21.027601, 0, 0, 0, 1, 0, 0, 0, 13.803426, -19.85, 0.1, 6.6000004)
+
+[node name="StaticBody3D" type="StaticBody3D" parent="Floor_R0_C0/floorFull(Clone)" parent_id_path=PackedInt32Array(511581626, 2068004304) index="0" unique_id=1391004801]
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="Floor_R0_C0/floorFull(Clone)/StaticBody3D" unique_id=166907732]
+shape = SubResource("ConcavePolygonShape3D_a4imk")
+
+[node name="rugRectangle" parent="." unique_id=363299470 instance=ExtResource("2_0dxu5")]
+transform = Transform3D(10.204905, 0, 0, 0, 1, 0, 0, 0, 10.764032, -17.20054, 0.14999998, 4.6963983)
+
+[editable path="floorFull"]
+[editable path="floorFull2"]
+[editable path="Floor_R0_C0"]

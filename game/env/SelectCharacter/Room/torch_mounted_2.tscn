@@ -1,0 +1,103 @@
+[gd_scene format=3 uid="uid://b40r2caer2o0s"]
+
+[ext_resource type="PackedScene" uid="uid://b3mhhostlkvro" path="res://env/SelectCharacter/Room/torch_mounted.gltf" id="1_1ya28"]
+[ext_resource type="PackedScene" uid="uid://dc16fbqecba6l" path="res://env/SelectCharacter/Room/torch_lit.gltf" id="2_8r1w4"]
+[ext_resource type="Texture2D" uid="uid://cj17r7mdbmvfs" path="res://env/SelectCharacter/Materials/smoke-12.png" id="3_8r1w4"]
+
+[sub_resource type="Gradient" id="Gradient_1ya28"]
+offsets = PackedFloat32Array(0, 0.7773973, 1)
+colors = PackedColorArray(1, 1, 1, 1, 0, 0, 0, 1, 0, 0, 0, 0)
+
+[sub_resource type="GradientTexture1D" id="GradientTexture1D_8r1w4"]
+gradient = SubResource("Gradient_1ya28")
+
+[sub_resource type="ParticleProcessMaterial" id="ParticleProcessMaterial_x5qt7"]
+emission_shape = 1
+emission_sphere_radius = 0.15
+gravity = Vector3(0, 1, 0)
+scale_min = 0.01
+scale_max = 0.03
+color_ramp = SubResource("GradientTexture1D_8r1w4")
+turbulence_enabled = true
+turbulence_noise_strength = 2.0
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_x5qt7"]
+shading_mode = 0
+albedo_color = Color(0.77287436, 0.20273957, 0, 1)
+billboard_mode = 3
+billboard_keep_scale = true
+particles_anim_h_frames = 1
+particles_anim_v_frames = 1
+particles_anim_loop = false
+
+[sub_resource type="QuadMesh" id="QuadMesh_d2ool"]
+material = SubResource("StandardMaterial3D_x5qt7")
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_efd1r"]
+transparency = 1
+vertex_color_use_as_albedo = true
+albedo_texture = ExtResource("3_8r1w4")
+emission_enabled = true
+emission = Color(0.7833194, 0.41541553, 0, 1)
+emission_energy_multiplier = 20.0
+billboard_mode = 1
+billboard_keep_scale = true
+
+[sub_resource type="Gradient" id="Gradient_djwey"]
+offsets = PackedFloat32Array(0, 0.36643836, 0.90068495, 1)
+colors = PackedColorArray(0.987045, 0.7085704, 3.85046e-07, 1, 0.9356426, 0.27021253, 0, 1, 0.81388164, 0, 0.11034142, 1, 0.8156863, 0, 0.10980392, 0)
+
+[sub_resource type="GradientTexture1D" id="GradientTexture1D_gmrdu"]
+gradient = SubResource("Gradient_djwey")
+
+[sub_resource type="Curve" id="Curve_el1yf"]
+_data = [Vector2(0, 1), 0.0, 0.0, 0, 0, Vector2(1, 0), 0.0, 0.0, 0, 0]
+point_count = 2
+
+[sub_resource type="CurveTexture" id="CurveTexture_48dk8"]
+curve = SubResource("Curve_el1yf")
+
+[sub_resource type="ParticleProcessMaterial" id="ParticleProcessMaterial_6l1a6"]
+emission_shape = 1
+emission_sphere_radius = 0.1
+gravity = Vector3(0, 3, 0)
+scale_min = 0.29999998
+scale_max = 0.5
+scale_curve = SubResource("CurveTexture_48dk8")
+color_ramp = SubResource("GradientTexture1D_gmrdu")
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_7k8bo"]
+transparency = 1
+shading_mode = 0
+billboard_mode = 3
+billboard_keep_scale = true
+particles_anim_h_frames = 1
+particles_anim_v_frames = 1
+particles_anim_loop = false
+
+[sub_resource type="QuadMesh" id="QuadMesh_djobl"]
+material = SubResource("StandardMaterial3D_7k8bo")
+
+[node name="torch_mounted2" unique_id=1373432727 instance=ExtResource("1_1ya28")]
+
+[node name="torch_lit2" parent="." index="1" unique_id=1277986680 instance=ExtResource("2_8r1w4")]
+transform = Transform3D(1, 0, 0, 0, 0.97437, -0.22495103, 0, 0.22495103, 0.97437, 0, 0, 0.2)
+
+[node name="Scintille" type="GPUParticles3D" parent="torch_lit2/torch_lit" parent_id_path=PackedInt32Array(1277986680, 1644887877) index="0" unique_id=261203664]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.569646, 0.022432357)
+amount = 24
+amount_ratio = 0.5
+lifetime = 1.2
+randomness = 0.5
+process_material = SubResource("ParticleProcessMaterial_x5qt7")
+draw_pass_1 = SubResource("QuadMesh_d2ool")
+
+[node name="Fiamma" type="GPUParticles3D" parent="torch_lit2/torch_lit" parent_id_path=PackedInt32Array(1277986680, 1644887877) index="1" unique_id=1138869344]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.42349073, 0.056175098)
+material_override = SubResource("StandardMaterial3D_efd1r")
+amount = 30
+lifetime = 0.6
+process_material = SubResource("ParticleProcessMaterial_6l1a6")
+draw_pass_1 = SubResource("QuadMesh_djobl")
+
+[editable path="torch_lit2"]

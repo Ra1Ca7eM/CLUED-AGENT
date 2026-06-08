@@ -1,0 +1,8 @@
+[gd_resource type="StandardMaterial3D" format=3 uid="uid://f44xsugn83ea"]
+
+[ext_resource type="Texture2D" uid="uid://cihpxhf3jpvwp" path="res://env/Textures/restaurantbits_texture.png" id="1_5q3wg"]
+
+[resource]
+resource_name = "restaurant"
+albedo_texture = ExtResource("1_5q3wg")
+roughness = 0.5

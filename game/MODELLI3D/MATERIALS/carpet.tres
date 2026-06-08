@@ -1,0 +1,6 @@
+[gd_resource type="StandardMaterial3D" format=3 uid="uid://3nc4y13cc73s"]
+
+[resource]
+resource_name = "carpet"
+albedo_color = Color(1, 0.4627451, 0.39215687, 1)
+emission_enabled = true

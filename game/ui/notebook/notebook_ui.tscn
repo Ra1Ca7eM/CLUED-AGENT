@@ -1,0 +1,153 @@
+[gd_scene load_steps=5 format=3 uid="uid://c8notebookui01"]
+
+[ext_resource type="Script" path="res://scripts/ui/notebook_ui.gd" id="1_nb"]
+[ext_resource type="StyleBoxFlat" path="res://ui/notebook/styles/notebook_panel.tres" id="2_panel"]
+[ext_resource type="Script" path="res://scripts/ui/house_map_canvas.gd" id="3_map"]
+[ext_resource type="PackedScene" uid="uid://c8cluepopup01" path="res://ui/notebook/clue_popup.tscn" id="4_clue"]
+
+[node name="NotebookUI" type="CanvasLayer" groups=["overlay_ui"]]
+layer = 10
+script = ExtResource("1_nb")
+
+[node name="NotebookPanel" type="Panel" parent="."]
+unique_name_in_owner = true
+visible = false
+anchors_preset = -1
+anchor_left = 0.07
+anchor_top = 0.04
+anchor_right = 0.93
+anchor_bottom = 0.96
+grow_horizontal = 2
+grow_vertical = 2
+theme_override_styles/panel = ExtResource("2_panel")
+
+[node name="RootVBox" type="VBoxContainer" parent="NotebookPanel"]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+theme_override_constants/separation = 6
+
+[node name="TitleMargin" type="MarginContainer" parent="NotebookPanel/RootVBox"]
+layout_mode = 2
+theme_override_constants/margin_left = 18
+theme_override_constants/margin_top = 14
+theme_override_constants/margin_right = 18
+
+[node name="TitleLabel" type="Label" parent="NotebookPanel/RootVBox/TitleMargin"]
+layout_mode = 2
+theme_override_colors/font_color = Color(0.85, 0.75, 0.42, 1)
+theme_override_font_sizes/font_size = 24
+text = "TACCUINO"
+horizontal_alignment = 1
+
+[node name="TabMargin" type="MarginContainer" parent="NotebookPanel/RootVBox"]
+layout_mode = 2
+size_flags_vertical = 3
+theme_override_constants/margin_left = 14
+theme_override_constants/margin_top = 6
+theme_override_constants/margin_right = 14
+
+[node name="TabContainer" type="TabContainer" parent="NotebookPanel/RootVBox/TabMargin"]
+unique_name_in_owner = true
+layout_mode = 2
+size_flags_vertical = 3
+current_tab = 0
+
+[node name="Mappa" type="HBoxContainer" parent="NotebookPanel/RootVBox/TabMargin/TabContainer"]
+layout_mode = 2
+size_flags_vertical = 3
+theme_override_constants/separation = 10
+metadata/_tab_name = "Mappa"
+
+[node name="MapCanvas" type="Control" parent="NotebookPanel/RootVBox/TabMargin/TabContainer/Mappa"]
+unique_name_in_owner = true
+custom_minimum_size = Vector2(320, 240)
+layout_mode = 2
+size_flags_horizontal = 3
+size_flags_vertical = 3
+script = ExtResource("3_map")
+
+[node name="MapSidebar" type="VBoxContainer" parent="NotebookPanel/RootVBox/TabMargin/TabContainer/Mappa"]
+layout_mode = 2
+custom_minimum_size = Vector2(140, 0)
+theme_override_constants/separation = 8
+
+[node name="FloorBtn0" type="Button" parent="NotebookPanel/RootVBox/TabMargin/TabContainer/Mappa/MapSidebar"]
+unique_name_in_owner = true
+layout_mode = 2
+toggle_mode = true
+text = "1° Piano"
+
+[node name="FloorBtn1" type="Button" parent="NotebookPanel/RootVBox/TabMargin/TabContainer/Mappa/MapSidebar"]
+unique_name_in_owner = true
+layout_mode = 2
+toggle_mode = true
+button_pressed = true
+text = "Piano Terra"
+
+[node name="FloorBtn2" type="Button" parent="NotebookPanel/RootVBox/TabMargin/TabContainer/Mappa/MapSidebar"]
+unique_name_in_owner = true
+layout_mode = 2
+toggle_mode = true
+text = "Cantina"
+
+[node name="FloorBtn3" type="Button" parent="NotebookPanel/RootVBox/TabMargin/TabContainer/Mappa/MapSidebar"]
+unique_name_in_owner = true
+layout_mode = 2
+toggle_mode = true
+text = "Giardino"
+
+[node name="MapCounter" type="Label" parent="NotebookPanel/RootVBox/TabMargin/TabContainer/Mappa/MapSidebar"]
+unique_name_in_owner = true
+layout_mode = 2
+theme_override_colors/font_color = Color(0.85, 0.75, 0.42, 1)
+theme_override_font_sizes/font_size = 13
+text = "Trovati sulla mappa: 0 / 0"
+autowrap_mode = 3
+
+[node name="Dialoghi" type="ScrollContainer" parent="NotebookPanel/RootVBox/TabMargin/TabContainer"]
+layout_mode = 2
+size_flags_vertical = 3
+metadata/_tab_name = "Dialoghi"
+
+[node name="DialogueContent" type="VBoxContainer" parent="NotebookPanel/RootVBox/TabMargin/TabContainer/Dialoghi"]
+layout_mode = 2
+size_flags_horizontal = 3
+theme_override_constants/separation = 10
+
+[node name="DialogueEmptyLabel" type="Label" parent="NotebookPanel/RootVBox/TabMargin/TabContainer/Dialoghi/DialogueContent"]
+unique_name_in_owner = true
+visible = false
+layout_mode = 2
+theme_override_colors/font_color = Color(0.6, 0.58, 0.52, 0.9)
+theme_override_font_sizes/font_size = 14
+text = "Nessun dialogo ancora. Parla con un ospite per sbloccare le carte profilo."
+autowrap_mode = 3
+
+[node name="DialogueGrid" type="GridContainer" parent="NotebookPanel/RootVBox/TabMargin/TabContainer/Dialoghi/DialogueContent"]
+unique_name_in_owner = true
+layout_mode = 2
+size_flags_horizontal = 3
+theme_override_constants/h_separation = 12
+theme_override_constants/v_separation = 12
+columns = 4
+
+[node name="HintMargin" type="MarginContainer" parent="NotebookPanel/RootVBox"]
+layout_mode = 2
+theme_override_constants/margin_left = 14
+theme_override_constants/margin_top = 4
+theme_override_constants/margin_right = 14
+theme_override_constants/margin_bottom = 10
+
+[node name="HintLabel" type="Label" parent="NotebookPanel/RootVBox/HintMargin"]
+layout_mode = 2
+theme_override_colors/font_color = Color(0.6, 0.58, 0.52, 0.8)
+theme_override_font_sizes/font_size = 13
+text = "TAB — taccuino e mappa  ·  ESC — chiudi"
+horizontal_alignment = 1
+
+[node name="CluePopup" parent="." instance=ExtResource("4_clue")]
+unique_name_in_owner = true

@@ -1,0 +1,644 @@
+{
+  "accessors": [
+    {
+      "bufferView": 2,
+      "componentType": 5126,
+      "count": 408,
+      "max": [
+        0.9988686442375183,
+        0.9952704906463623,
+        3.2559778690338135
+      ],
+      "min": [
+        -0.9985718131065369,
+        -0.9952704906463623,
+        -1.0
+      ],
+      "type": "VEC3"
+    },
+    {
+      "bufferView": 2,
+      "byteOffset": 4896,
+      "componentType": 5126,
+      "count": 408,
+      "max": [
+        0.9999960660934448,
+        0.9992190599441528,
+        0.9859364628791809
+      ],
+      "min": [
+        -0.9999909996986389,
+        -0.9992190599441528,
+        -1.0
+      ],
+      "type": "VEC3"
+    },
+    {
+      "bufferView": 3,
+      "componentType": 5126,
+      "count": 408,
+      "max": [
+        0.9033711552619934,
+        0.99995356798172,
+        0.9999971389770508,
+        1.0
+      ],
+      "min": [
+        -0.9866795539855957,
+        -1.0,
+        -0.6931271553039551,
+        1.0
+      ],
+      "type": "VEC4"
+    },
+    {
+      "bufferView": 1,
+      "componentType": 5126,
+      "count": 408,
+      "max": [
+        0.6989102959632874,
+        0.4864727854728699
+      ],
+      "min": [
+        0.00150880787987262,
+        0.0015030058566480875
+      ],
+      "type": "VEC2"
+    },
+    {
+      "bufferView": 0,
+      "componentType": 5125,
+      "count": 2160,
+      "type": "SCALAR"
+    },
+    {
+      "bufferView": 2,
+      "byteOffset": 9792,
+      "componentType": 5126,
+      "count": 1064,
+      "max": [
+        1.0,
+        0.9875776767730713,
+        3.2706427574157715
+      ],
+      "min": [
+        -1.0,
+        -0.9875776767730713,
+        1.2728593349456787
+      ],
+      "type": "VEC3"
+    },
+    {
+      "bufferView": 2,
+      "byteOffset": 22560,
+      "componentType": 5126,
+      "count": 1064,
+      "max": [
+        1.0,
+        0.993495762348175,
+        1.0
+      ],
+      "min": [
+        -1.0,
+        -0.993495762348175,
+        -0.7804491519927979
+      ],
+      "type": "VEC3"
+    },
+    {
+      "bufferView": 1,
+      "byteOffset": 3264,
+      "componentType": 5126,
+      "count": 1064,
+      "max": [
+        0.9984844326972961,
+        0.9984987378120422
+      ],
+      "min": [
+        0.0015076472191140056,
+        0.0015017810510471463
+      ],
+      "type": "VEC2"
+    },
+    {
+      "bufferView": 0,
+      "byteOffset": 8640,
+      "componentType": 5125,
+      "count": 4668,
+      "type": "SCALAR"
+    },
+    {
+      "bufferView": 2,
+      "byteOffset": 35328,
+      "componentType": 5126,
+      "count": 602,
+      "max": [
+        0.9997999668121338,
+        0.9947022199630737,
+        1.2730071544647217
+      ],
+      "min": [
+        -0.9997277855873108,
+        -0.9947022199630737,
+        -1.0752476453781128
+      ],
+      "type": "VEC3"
+    },
+    {
+      "bufferView": 2,
+      "byteOffset": 42552,
+      "componentType": 5126,
+      "count": 602,
+      "max": [
+        1.0,
+        0.9982488751411438,
+        0.8406097292900085
+      ],
+      "min": [
+        -0.9999997019767761,
+        -0.9982488751411438,
+        -1.0
+      ],
+      "type": "VEC3"
+    },
+    {
+      "bufferView": 1,
+      "byteOffset": 11776,
+      "componentType": 5126,
+      "count": 602,
+      "max": [
+        0.9887157082557678,
+        0.8016275763511658
+      ],
+      "min": [
+        0.0015056022675707936,
+        0.0018152607372030616
+      ],
+      "type": "VEC2"
+    },
+    {
+      "bufferView": 0,
+      "byteOffset": 27312,
+      "componentType": 5125,
+      "count": 2880,
+      "type": "SCALAR"
+    },
+    {
+      "bufferView": 2,
+      "byteOffset": 49776,
+      "componentType": 5126,
+      "count": 935,
+      "max": [
+        0.6019652485847473,
+        0.6018783450126648,
+        1.8613027334213257
+      ],
+      "min": [
+        -0.6021674871444702,
+        -0.6018783450126648,
+        -0.47556009888648987
+      ],
+      "type": "VEC3"
+    },
+    {
+      "bufferView": 2,
+      "byteOffset": 60996,
+      "componentType": 5126,
+      "count": 935,
+      "max": [
+        1.0,
+        1.0,
+        0.9999362826347351
+      ],
+      "min": [
+        -1.0,
+        -1.0,
+        -0.9999614953994751
+      ],
+      "type": "VEC3"
+    },
+    {
+      "bufferView": 3,
+      "byteOffset": 6528,
+      "componentType": 5126,
+      "count": 935,
+      "max": [
+        0.9999973773956299,
+        1.0,
+        1.0,
+        1.0
+      ],
+      "min": [
+        -0.9998809099197388,
+        -0.9999998211860657,
+        -0.9999986290931702,
+        1.0
+      ],
+      "type": "VEC4"
+    },
+    {
+      "bufferView": 1,
+      "byteOffset": 16592,
+      "componentType": 5126,
+      "count": 935,
+      "max": [
+        0.8849698305130005,
+        0.9464230537414551
+      ],
+      "min": [
+        0.24430246651172638,
+        0.2953451871871948
+      ],
+      "type": "VEC2"
+    },
+    {
+      "bufferView": 0,
+      "byteOffset": 38832,
+      "componentType": 5125,
+      "count": 4848,
+      "type": "SCALAR"
+    }
+  ],
+  "asset": {
+    "extras": {
+      "author": "AshkPunk (https://sketchfab.com/ashkpunk)",
+      "license": "CC-BY-4.0 (http://creativecommons.org/licenses/by/4.0/)",
+      "source": "https://sketchfab.com/3d-models/lipstick-d383633291384c20ab67eafcbfb5e4b4",
+      "title": "Lipstick"
+    },
+    "generator": "Sketchfab-13.74.0",
+    "version": "2.0"
+  },
+  "bufferViews": [
+    {
+      "buffer": 0,
+      "byteLength": 58224,
+      "name": "floatBufferViews",
+      "target": 34963
+    },
+    {
+      "buffer": 0,
+      "byteLength": 24072,
+      "byteOffset": 58224,
+      "byteStride": 8,
+      "name": "floatBufferViews",
+      "target": 34962
+    },
+    {
+      "buffer": 0,
+      "byteLength": 72216,
+      "byteOffset": 82296,
+      "byteStride": 12,
+      "name": "floatBufferViews",
+      "target": 34962
+    },
+    {
+      "buffer": 0,
+      "byteLength": 21488,
+      "byteOffset": 154512,
+      "byteStride": 16,
+      "name": "floatBufferViews",
+      "target": 34962
+    }
+  ],
+  "buffers": [
+    {
+      "byteLength": 176000,
+      "uri": "scene.bin"
+    }
+  ],
+  "images": [
+    {
+      "uri": "textures/Lipstick_baseColor.jpeg"
+    },
+    {
+      "uri": "textures/Lipstick_metallicRoughness.png"
+    },
+    {
+      "uri": "textures/Lipstick_normal.png"
+    },
+    {
+      "uri": "textures/material_baseColor.jpeg"
+    },
+    {
+      "uri": "textures/material_metallicRoughness.png"
+    },
+    {
+      "uri": "textures/material_normal.png"
+    }
+  ],
+  "materials": [
+    {
+      "doubleSided": true,
+      "name": "Lipstick",
+      "normalTexture": {
+        "index": 2
+      },
+      "pbrMetallicRoughness": {
+        "baseColorTexture": {
+          "index": 0
+        },
+        "metallicRoughnessTexture": {
+          "index": 1
+        }
+      }
+    },
+    {
+      "doubleSided": true,
+      "name": "Top_Tube",
+      "pbrMetallicRoughness": {
+        "baseColorFactor": [
+          0.896269,
+          0.637597,
+          0.187821,
+          1.0
+        ],
+        "metallicFactor": 0.0,
+        "roughnessFactor": 0.8132907624242259
+      }
+    },
+    {
+      "doubleSided": true,
+      "name": "Bottom_Tube",
+      "pbrMetallicRoughness": {
+        "baseColorFactor": [
+          0.0241576,
+          0.0241576,
+          0.0241576,
+          1.0
+        ],
+        "metallicFactor": 0.0,
+        "roughnessFactor": 0.9945981964226751
+      }
+    },
+    {
+      "doubleSided": true,
+      "name": "material",
+      "normalTexture": {
+        "index": 5
+      },
+      "pbrMetallicRoughness": {
+        "baseColorTexture": {
+          "index": 3
+        },
+        "metallicRoughnessTexture": {
+          "index": 4
+        }
+      }
+    }
+  ],
+  "meshes": [
+    {
+      "name": "Lipstick _Lipstick_0",
+      "primitives": [
+        {
+          "attributes": {
+            "NORMAL": 1,
+            "POSITION": 0,
+            "TANGENT": 2,
+            "TEXCOORD_0": 3
+          },
+          "indices": 4,
+          "material": 0,
+          "mode": 4
+        }
+      ]
+    },
+    {
+      "name": "Lipstick Tube_Top Tube_0",
+      "primitives": [
+        {
+          "attributes": {
+            "NORMAL": 6,
+            "POSITION": 5,
+            "TEXCOORD_0": 7
+          },
+          "indices": 8,
+          "material": 1,
+          "mode": 4
+        }
+      ]
+    },
+    {
+      "name": "Lipstick Tube_Bottom Tube_0",
+      "primitives": [
+        {
+          "attributes": {
+            "NORMAL": 10,
+            "POSITION": 9,
+            "TEXCOORD_0": 11
+          },
+          "indices": 12,
+          "material": 2,
+          "mode": 4
+        }
+      ]
+    },
+    {
+      "name": "Lipstick Cap_Cap_0",
+      "primitives": [
+        {
+          "attributes": {
+            "NORMAL": 14,
+            "POSITION": 13,
+            "TANGENT": 15,
+            "TEXCOORD_0": 16
+          },
+          "indices": 17,
+          "material": 3,
+          "mode": 4
+        }
+      ]
+    }
+  ],
+  "nodes": [
+    {
+      "children": [
+        1
+      ],
+      "matrix": [
+        1.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        2.220446049250313e-16,
+        -1.0,
+        0.0,
+        0.0,
+        1.0,
+        2.220446049250313e-16,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        1.0
+      ],
+      "name": "Sketchfab_model"
+    },
+    {
+      "children": [
+        2
+      ],
+      "matrix": [
+        0.009999999776482582,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.009999999776482582,
+        0.0,
+        0.0,
+        -0.009999999776482582,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        1.0
+      ],
+      "name": "Lipstick.fbx"
+    },
+    {
+      "children": [
+        3,
+        5,
+        8
+      ],
+      "name": "RootNode"
+    },
+    {
+      "children": [
+        4
+      ],
+      "matrix": [
+        17.45623696391662,
+        -1.4730841297908474e-06,
+        -27.875192025177405,
+        0.0,
+        -27.87519202517739,
+        -3.006136105047239e-06,
+        -17.456236963916453,
+        0.0,
+        -1.7659551471191358e-06,
+        32.88991546630842,
+        -2.8439819873537923e-06,
+        0.0,
+        0.0,
+        354.6388244628906,
+        0.0,
+        1.0
+      ],
+      "name": "Lipstick "
+    },
+    {
+      "mesh": 0,
+      "name": "Lipstick _Lipstick_0"
+    },
+    {
+      "children": [
+        6,
+        7
+      ],
+      "matrix": [
+        52.51399230957031,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        -8.555615304652605e-06,
+        -52.513992309569616,
+        0.0,
+        0.0,
+        78.4283065795888,
+        -1.2777592991497619e-05,
+        0.0,
+        0.0,
+        79.88156127929688,
+        0.0,
+        1.0
+      ],
+      "name": "Lipstick Tube"
+    },
+    {
+      "mesh": 1,
+      "name": "Lipstick Tube_Top Tube_0"
+    },
+    {
+      "mesh": 2,
+      "name": "Lipstick Tube_Bottom Tube_0"
+    },
+    {
+      "children": [
+        9
+      ],
+      "matrix": [
+        85.7024917602539,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        -1.39627081831534e-05,
+        -85.70249176025277,
+        0.0,
+        0.0,
+        85.70249176025277,
+        -1.39627081831534e-05,
+        0.0,
+        122.24178314208984,
+        233.33489990234375,
+        0.0,
+        1.0
+      ],
+      "name": "Lipstick Cap"
+    },
+    {
+      "mesh": 3,
+      "name": "Lipstick Cap_Cap_0"
+    }
+  ],
+  "samplers": [
+    {
+      "magFilter": 9729,
+      "minFilter": 9987,
+      "wrapS": 10497,
+      "wrapT": 10497
+    }
+  ],
+  "scene": 0,
+  "scenes": [
+    {
+      "name": "Sketchfab_Scene",
+      "nodes": [
+        0
+      ]
+    }
+  ],
+  "textures": [
+    {
+      "sampler": 0,
+      "source": 0
+    },
+    {
+      "sampler": 0,
+      "source": 1
+    },
+    {
+      "sampler": 0,
+      "source": 2
+    },
+    {
+      "sampler": 0,
+      "source": 3
+    },
+    {
+      "sampler": 0,
+      "source": 4
+    },
+    {
+      "sampler": 0,
+      "source": 5
+    }
+  ]
+}

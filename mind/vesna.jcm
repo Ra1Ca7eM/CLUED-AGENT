@@ -1,0 +1,63 @@
+mas hotel {
+
+    agent alberto:alberto.asl {
+        beliefs:    address( localhost )
+                    port( 9084 )
+        goals:      start
+        ag-class:   vesna.VesnaAgent
+        join:       wp
+    }
+
+    agent evelina:evelina.asl {
+        beliefs:    address( localhost )
+                    port( 9085 )
+        goals:      start
+        ag-class:   vesna.VesnaAgent
+        join:       wp
+    }
+
+    agent clarissa:clarissa.asl {
+        beliefs:    address( localhost )
+                    port( 9086 )
+        goals:      start
+        ag-class:   vesna.VesnaAgent
+        join:       wp
+    }
+
+    agent vittorio:vittorio.asl {
+        beliefs:    address( localhost )
+                    port( 9087 )
+        goals:      start
+        ag-class:   vesna.VesnaAgent
+        join:       wp
+    }
+
+    // Game Master: receives the player's final accusation (via player) and scores it.
+    // No body (no VEsNA, no WebSocket): a plain Jason agent, indexed for routing like the others.
+    // MUST be declared BEFORE player: the Interpreter builds the embedding space in its init(),
+    // so every agent it has to index (including gamemaster) must already exist at that point.
+    agent gamemaster:gamemaster.asl { }
+
+    // ChatBDI interpreter, named "player": it represents the human player talking to the agents.
+    // It bridges natural language (Godot chat / Swing) to the agents. No body (no WebSocket):
+    // it only talks to the other agents and the GodotBridge (port 8090).
+    agent player:player.asl {
+        ag-arch:  chatbdi.Interpreter
+    }
+
+    workspace wp {
+        artifact doorway:   vesna.playgrounds.hotel.Door( "salone", "bagno", 1 )
+        artifact doorway2:  vesna.playgrounds.hotel.Door( "corridoio", "room6", 1 )
+        artifact doorway3:  vesna.playgrounds.hotel.Door( "corridoio", "room4", 1 )
+        artifact doorway4:  vesna.playgrounds.hotel.Door( "corridoio", "room2", 1 )
+        artifact doorway5:  vesna.playgrounds.hotel.Door( "corridoio", "room1", 1 )
+        artifact doorway6:  vesna.playgrounds.hotel.Door( "corridoio", "room3", 1 )
+        artifact doorway7:  vesna.playgrounds.hotel.Door( "corridoio", "room5", 1 )
+        artifact door_B2:   vesna.playgrounds.hotel.Door( "cucina", "giardino", 1 )
+        artifact door_B3:   vesna.playgrounds.hotel.Door( "cucina", "salone", 1 )
+        artifact door_B4:   vesna.playgrounds.hotel.Door( "giardino", "cucina", 1 )
+        artifact boccetta_digitalina: vesna.playgrounds.hotel.HotelGrabbable( "cantina" )
+        artifact hotel_ambience: vesna.playgrounds.hotel.HotelAmbience()
+    }
+
+}

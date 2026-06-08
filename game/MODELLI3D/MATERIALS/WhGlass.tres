@@ -1,0 +1,20 @@
+[gd_resource type="StandardMaterial3D" format=3 uid="uid://cxkfg67crs42y"]
+
+[ext_resource type="Texture2D" uid="uid://c7jpj6jc6ogr5" path="res://MODELLI3D/Others/whiskey_glass/textures/WhGlass_baseColor.png" id="1_ki0yk"]
+[ext_resource type="Texture2D" uid="uid://deiuaehipenvi" path="res://MODELLI3D/Others/whiskey_glass/textures/WhGlass_metallicRoughness.png" id="2_ek4ey"]
+[ext_resource type="Texture2D" uid="uid://ct2tt2wnytwrk" path="res://MODELLI3D/Others/whiskey_glass/textures/WhGlass_normal.png" id="3_cak8w"]
+
+[resource]
+resource_name = "WhGlass"
+transparency = 4
+cull_mode = 2
+albedo_texture = ExtResource("1_ki0yk")
+metallic = 1.0
+metallic_texture = ExtResource("2_ek4ey")
+metallic_texture_channel = 2
+roughness_texture = ExtResource("2_ek4ey")
+roughness_texture_channel = 1
+normal_enabled = true
+normal_texture = ExtResource("3_cak8w")
+ao_enabled = true
+ao_texture = ExtResource("2_ek4ey")

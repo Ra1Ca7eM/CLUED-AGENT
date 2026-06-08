@@ -1,0 +1,148 @@
+[gd_scene load_steps=3 format=3 uid="uid://c8cluepopup01"]
+
+[ext_resource type="Script" path="res://scripts/ui/clue_popup.gd" id="1_script"]
+[ext_resource type="StyleBoxFlat" path="res://ui/notebook/styles/clue_popup_panel.tres" id="2_popup"]
+
+[node name="CluePopup" type="PanelContainer"]
+visible = false
+z_index = 100
+anchors_preset = -1
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+grow_horizontal = 2
+grow_vertical = 2
+theme_override_styles/panel = ExtResource("2_popup")
+script = ExtResource("1_script")
+
+[node name="OuterMargin" type="MarginContainer" parent="."]
+layout_mode = 2
+theme_override_constants/margin_left = 14
+theme_override_constants/margin_top = 10
+theme_override_constants/margin_right = 14
+theme_override_constants/margin_bottom = 12
+
+[node name="RootVBox" type="VBoxContainer" parent="OuterMargin"]
+layout_mode = 2
+size_flags_horizontal = 3
+size_flags_vertical = 3
+theme_override_constants/separation = 10
+
+[node name="TopRow" type="HBoxContainer" parent="OuterMargin/RootVBox"]
+layout_mode = 2
+
+[node name="Spacer" type="Control" parent="OuterMargin/RootVBox/TopRow"]
+layout_mode = 2
+size_flags_horizontal = 3
+
+[node name="CloseButton" type="Button" parent="OuterMargin/RootVBox/TopRow"]
+unique_name_in_owner = true
+layout_mode = 2
+custom_minimum_size = Vector2(32, 28)
+text = "X"
+
+[node name="CluePopupTitle" type="Label" parent="OuterMargin/RootVBox"]
+unique_name_in_owner = true
+layout_mode = 2
+theme_override_colors/font_color = Color(0.85, 0.75, 0.42, 1)
+theme_override_font_sizes/font_size = 24
+horizontal_alignment = 1
+autowrap_mode = 3
+
+[node name="ContentScroll" type="ScrollContainer" parent="OuterMargin/RootVBox"]
+unique_name_in_owner = true
+custom_minimum_size = Vector2(0, 360)
+layout_mode = 2
+size_flags_vertical = 3
+horizontal_scroll_mode = 0
+clip_contents = true
+
+[node name="ContentHBox" type="HBoxContainer" parent="OuterMargin/RootVBox/ContentScroll"]
+unique_name_in_owner = true
+layout_mode = 2
+size_flags_horizontal = 4
+theme_override_constants/separation = 16
+alignment = 1
+
+[node name="NormalBlock" type="VBoxContainer" parent="OuterMargin/RootVBox/ContentScroll/ContentHBox"]
+unique_name_in_owner = true
+custom_minimum_size = Vector2(280, 0)
+layout_mode = 2
+size_flags_horizontal = 4
+theme_override_constants/separation = 6
+alignment = 1
+
+[node name="NormalHeader" type="Label" parent="OuterMargin/RootVBox/ContentScroll/ContentHBox/NormalBlock"]
+layout_mode = 2
+size_flags_horizontal = 3
+theme_override_colors/font_color = Color(0.85, 0.75, 0.42, 1)
+theme_override_font_sizes/font_size = 16
+text = "Informazioni"
+horizontal_alignment = 1
+
+[node name="NormalImageAspect" type="AspectRatioContainer" parent="OuterMargin/RootVBox/ContentScroll/ContentHBox/NormalBlock"]
+unique_name_in_owner = true
+custom_minimum_size = Vector2(260, 195)
+layout_mode = 2
+size_flags_horizontal = 4
+stretch_mode = 2
+
+[node name="CluePopupNormalImage" type="TextureRect" parent="OuterMargin/RootVBox/ContentScroll/ContentHBox/NormalBlock/NormalImageAspect"]
+unique_name_in_owner = true
+layout_mode = 2
+expand_mode = 1
+stretch_mode = 4
+
+[node name="CluePopupNormalText" type="Label" parent="OuterMargin/RootVBox/ContentScroll/ContentHBox/NormalBlock"]
+unique_name_in_owner = true
+custom_minimum_size = Vector2(260, 0)
+layout_mode = 2
+size_flags_horizontal = 4
+theme_override_font_sizes/font_size = 14
+horizontal_alignment = 1
+autowrap_mode = 3
+
+[node name="ColumnSeparator" type="VSeparator" parent="OuterMargin/RootVBox/ContentScroll/ContentHBox"]
+unique_name_in_owner = true
+visible = false
+layout_mode = 2
+
+[node name="CluePopupUvBlock" type="VBoxContainer" parent="OuterMargin/RootVBox/ContentScroll/ContentHBox"]
+unique_name_in_owner = true
+custom_minimum_size = Vector2(280, 0)
+layout_mode = 2
+size_flags_horizontal = 4
+theme_override_constants/separation = 6
+alignment = 1
+
+[node name="UvHeader" type="Label" parent="OuterMargin/RootVBox/ContentScroll/ContentHBox/CluePopupUvBlock"]
+unique_name_in_owner = true
+layout_mode = 2
+size_flags_horizontal = 3
+theme_override_colors/font_color = Color(0.75, 0.55, 1, 1)
+theme_override_font_sizes/font_size = 16
+text = "Informazioni UV"
+horizontal_alignment = 1
+
+[node name="UvImageAspect" type="AspectRatioContainer" parent="OuterMargin/RootVBox/ContentScroll/ContentHBox/CluePopupUvBlock"]
+unique_name_in_owner = true
+custom_minimum_size = Vector2(260, 195)
+layout_mode = 2
+size_flags_horizontal = 4
+stretch_mode = 2
+
+[node name="CluePopupUvImage" type="TextureRect" parent="OuterMargin/RootVBox/ContentScroll/ContentHBox/CluePopupUvBlock/UvImageAspect"]
+unique_name_in_owner = true
+layout_mode = 2
+expand_mode = 1
+stretch_mode = 4
+
+[node name="CluePopupUvText" type="Label" parent="OuterMargin/RootVBox/ContentScroll/ContentHBox/CluePopupUvBlock"]
+unique_name_in_owner = true
+custom_minimum_size = Vector2(260, 0)
+layout_mode = 2
+size_flags_horizontal = 4
+theme_override_font_sizes/font_size = 14
+horizontal_alignment = 1
+autowrap_mode = 3

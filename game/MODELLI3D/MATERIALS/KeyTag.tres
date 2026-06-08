@@ -1,0 +1,17 @@
+[gd_resource type="StandardMaterial3D" format=3 uid="uid://0u5lxscytj3s"]
+
+[ext_resource type="Texture2D" uid="uid://b4t58h3tnefsh" path="res://MODELLI3D/Others/key_with_tag/textures/KeyTag_baseColor.png" id="1_h8tix"]
+[ext_resource type="Texture2D" uid="uid://cwp1gkak5cr22" path="res://MODELLI3D/Others/key_with_tag/textures/KeyTag_metallicRoughness.png" id="2_vbvqq"]
+[ext_resource type="Texture2D" uid="uid://b2hucltsv0651" path="res://MODELLI3D/Others/key_with_tag/textures/KeyTag_normal.png" id="3_tr834"]
+
+[resource]
+resource_name = "KeyTag"
+cull_mode = 2
+albedo_texture = ExtResource("1_h8tix")
+metallic_texture = ExtResource("2_vbvqq")
+metallic_texture_channel = 2
+roughness_texture = ExtResource("2_vbvqq")
+roughness_texture_channel = 1
+normal_enabled = true
+normal_texture = ExtResource("3_tr834")
+ao_texture = ExtResource("2_vbvqq")

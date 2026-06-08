@@ -1,0 +1,124 @@
+[gd_scene format=3 uid="uid://bv1ulewl34jyj"]
+
+[ext_resource type="PackedScene" uid="uid://c4dou2phjn5pm" path="res://MODELLI3D/fireplace/scene.gltf" id="1_mkbo7"]
+[ext_resource type="Texture2D" uid="uid://cj17r7mdbmvfs" path="res://env/SelectCharacter/Materials/smoke-12.png" id="2_1ifjx"]
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_1lot3"]
+transparency = 1
+vertex_color_use_as_albedo = true
+albedo_texture = ExtResource("2_1ifjx")
+emission_enabled = true
+emission = Color(0.7833194, 0.41541553, 0, 1)
+emission_energy_multiplier = 20.0
+billboard_mode = 1
+billboard_keep_scale = true
+
+[sub_resource type="Gradient" id="Gradient_7cjm3"]
+offsets = PackedFloat32Array(0, 0.36643836, 0.90068495, 1)
+colors = PackedColorArray(0.987045, 0.7085704, 3.85046e-07, 1, 0.9356426, 0.27021253, 0, 1, 0.81388164, 0, 0.11034142, 1, 0.8156863, 0, 0.10980392, 0)
+
+[sub_resource type="GradientTexture1D" id="GradientTexture1D_gmrdu"]
+gradient = SubResource("Gradient_7cjm3")
+
+[sub_resource type="Curve" id="Curve_u3uw7"]
+_data = [Vector2(0, 1), 0.0, 0.0, 0, 0, Vector2(1, 0), 0.0, 0.0, 0, 0]
+point_count = 2
+
+[sub_resource type="CurveTexture" id="CurveTexture_48dk8"]
+curve = SubResource("Curve_u3uw7")
+
+[sub_resource type="ParticleProcessMaterial" id="ParticleProcessMaterial_uhhxs"]
+emission_shape = 1
+emission_sphere_radius = 0.1
+gravity = Vector3(0, 3, 0)
+scale_min = 0.29999998
+scale_max = 0.5
+scale_curve = SubResource("CurveTexture_48dk8")
+color_ramp = SubResource("GradientTexture1D_gmrdu")
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_7k8bo"]
+transparency = 1
+shading_mode = 0
+billboard_mode = 3
+billboard_keep_scale = true
+particles_anim_h_frames = 1
+particles_anim_v_frames = 1
+particles_anim_loop = false
+
+[sub_resource type="QuadMesh" id="QuadMesh_sjlq4"]
+material = SubResource("StandardMaterial3D_7k8bo")
+
+[sub_resource type="Gradient" id="Gradient_y41y2"]
+offsets = PackedFloat32Array(0, 0.7773973, 1)
+colors = PackedColorArray(1, 1, 1, 1, 0, 0, 0, 1, 0, 0, 0, 0)
+
+[sub_resource type="GradientTexture1D" id="GradientTexture1D_8r1w4"]
+gradient = SubResource("Gradient_y41y2")
+
+[sub_resource type="ParticleProcessMaterial" id="ParticleProcessMaterial_ux2v3"]
+emission_shape = 1
+emission_sphere_radius = 0.15
+gravity = Vector3(0, 1, 0)
+scale_min = 0.01
+scale_max = 0.03
+color_ramp = SubResource("GradientTexture1D_8r1w4")
+turbulence_enabled = true
+turbulence_noise_strength = 2.0
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_x5qt7"]
+shading_mode = 0
+albedo_color = Color(0.77287436, 0.20273957, 0, 1)
+billboard_mode = 3
+billboard_keep_scale = true
+particles_anim_h_frames = 1
+particles_anim_v_frames = 1
+particles_anim_loop = false
+
+[sub_resource type="QuadMesh" id="QuadMesh_yn0ao"]
+material = SubResource("StandardMaterial3D_x5qt7")
+
+[node name="Sketchfab_Scene" unique_id=1537826177 instance=ExtResource("1_mkbo7")]
+
+[node name="Cylinder" parent="Sketchfab_model/d0865c7aa4cd4164bdef05e0adb9a71e_fbx/RootNode" parent_id_path=PackedInt32Array(927276264) index="11" unique_id=386246427]
+visible = false
+
+[node name="Cube_017" parent="Sketchfab_model/d0865c7aa4cd4164bdef05e0adb9a71e_fbx/RootNode" parent_id_path=PackedInt32Array(927276264) index="12" unique_id=725850744]
+visible = false
+
+[node name="Cube_017_Metal_0" parent="Sketchfab_model/d0865c7aa4cd4164bdef05e0adb9a71e_fbx/RootNode/Cube_017" index="0" unique_id=1190154101]
+visible = false
+
+[node name="Cube_014" parent="Sketchfab_model/d0865c7aa4cd4164bdef05e0adb9a71e_fbx/RootNode" parent_id_path=PackedInt32Array(927276264) index="21" unique_id=60529991]
+visible = false
+
+[node name="Cube_014_Material_0" parent="Sketchfab_model/d0865c7aa4cd4164bdef05e0adb9a71e_fbx/RootNode/Cube_014" index="0" unique_id=534424265]
+visible = false
+
+[node name="Cube_015" parent="Sketchfab_model/d0865c7aa4cd4164bdef05e0adb9a71e_fbx/RootNode" parent_id_path=PackedInt32Array(927276264) index="22" unique_id=1043576062]
+visible = false
+
+[node name="Cube_015_Metal_001_0" parent="Sketchfab_model/d0865c7aa4cd4164bdef05e0adb9a71e_fbx/RootNode/Cube_015" index="0" unique_id=1536631167]
+visible = false
+
+[node name="Cube_016" parent="Sketchfab_model/d0865c7aa4cd4164bdef05e0adb9a71e_fbx/RootNode" parent_id_path=PackedInt32Array(927276264) index="23" unique_id=2129495792]
+visible = false
+
+[node name="Cube_016_Wood_0" parent="Sketchfab_model/d0865c7aa4cd4164bdef05e0adb9a71e_fbx/RootNode/Cube_016" index="0" unique_id=2025341808]
+visible = false
+
+[node name="Fiamma" type="GPUParticles3D" parent="Sketchfab_model/d0865c7aa4cd4164bdef05e0adb9a71e_fbx/RootNode" parent_id_path=PackedInt32Array(927276264) index="24" unique_id=524316818]
+transform = Transform3D(100, 0, 0, 0, -4.371139e-06, 100, 0, -100, -4.371139e-06, 2, 17.033743, 22.146154)
+material_override = SubResource("StandardMaterial3D_1lot3")
+amount = 30
+lifetime = 0.6
+process_material = SubResource("ParticleProcessMaterial_uhhxs")
+draw_pass_1 = SubResource("QuadMesh_sjlq4")
+
+[node name="Scintille" type="GPUParticles3D" parent="Sketchfab_model/d0865c7aa4cd4164bdef05e0adb9a71e_fbx/RootNode" parent_id_path=PackedInt32Array(927276264) index="25" unique_id=282263135]
+transform = Transform3D(100, 0, 0, 0, -4.371139e-06, 100, 0, -100, -4.371139e-06, 2, 17, 27.000002)
+amount = 24
+amount_ratio = 0.5
+lifetime = 1.2
+randomness = 0.5
+process_material = SubResource("ParticleProcessMaterial_ux2v3")
+draw_pass_1 = SubResource("QuadMesh_yn0ao")

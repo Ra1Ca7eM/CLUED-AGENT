@@ -1,0 +1,8 @@
+[gd_resource type="StandardMaterial3D" format=3 uid="uid://b23eq7svht1ay"]
+
+[ext_resource type="Texture2D" uid="uid://bbgrpaveeisry" path="res://env/SelectCharacter/Room/halloweenbits_texture.png" id="1_u4vet"]
+
+[resource]
+resource_name = "HalloweenBits"
+albedo_texture = ExtResource("1_u4vet")
+roughness = 0.6

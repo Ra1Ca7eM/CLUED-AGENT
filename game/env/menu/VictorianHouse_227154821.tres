@@ -1,0 +1,9 @@
+[gd_resource type="StandardMaterial3D" format=3 uid="uid://ejhgpq7yoiir"]
+
+[ext_resource type="Texture2D" uid="uid://dps22w6i1x6ok" path="res://env/menu/X_ghosthouse_tmpzldykqo8.png" id="1_nhard"]
+
+[resource]
+resource_name = "VictorianHouse_227154821"
+cull_mode = 2
+albedo_texture = ExtResource("1_nhard")
+roughness = 0.7

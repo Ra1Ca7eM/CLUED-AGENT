@@ -1,0 +1,8 @@
+The input sentence is \"SENTENCE\". The best fitting term in the domain is NEAREST_JSON. The extracted illocutionary force is ILF. Other terms with the same functor are: EXAMPLES. Produce the JSON term.
+
+Rules (in order of importance):
+- Keep the functor of NEAREST_JSON EXACTLY as it is. Never change it.
+- For each argument: if the input sentence clearly provides the value, use it; OTHERWISE copy the value from NEAREST_JSON verbatim (same spelling, same underscores; if it is an uppercase variable like X or Region, keep that variable).
+- Never invent a value, and never reuse the same value for two arguments.
+- Everything is in English: keep all atoms in English, do not translate.
+- Return ONLY the JSON term.

@@ -1,0 +1,5 @@
+[gd_resource type="StandardMaterial3D" format=3 uid="uid://cgqeyke8jhch3"]
+
+[resource]
+resource_name = "_defaultMat"
+emission_enabled = true

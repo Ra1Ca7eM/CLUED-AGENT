@@ -1,0 +1,14 @@
+[gd_scene load_steps=2 format=3 uid="uid://c8dialoguebubble01"]
+
+[ext_resource type="Script" uid="uid://bfrpc17ampa5o" path="res://scripts/ui/chat_message_bubble.gd" id="1_bubble"]
+
+[node name="ChatMessageBubble" type="PanelContainer"]
+script = ExtResource("1_bubble")
+
+[node name="MessageLabel" type="Label" parent="."]
+unique_name_in_owner = true
+custom_minimum_size = Vector2(220, 0)
+theme_override_colors/font_color = Color(0.94, 0.92, 0.86, 1)
+theme_override_font_sizes/font_size = 16
+text = "Messaggio di esempio"
+autowrap_mode = 3

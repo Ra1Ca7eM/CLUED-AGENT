@@ -1,0 +1,30 @@
+[gd_scene format=3 uid="uid://bs72ogkvdd7d6"]
+
+[ext_resource type="Script" uid="uid://tnoc0bagtrsy" path="res://addons/proto_controller/proto_controller.gd" id="1_ucva2"]
+[ext_resource type="PackedScene" uid="uid://b315owmu2f3fr" path="res://Assets/Scenes/rogue_hooded.tscn" id="2_wr06p"]
+
+[sub_resource type="CapsuleShape3D" id="CapsuleShape3D_iof21"]
+radius = 0.4
+height = 1.8
+
+[sub_resource type="SphereShape3D" id="SphereShape3D_wr06p"]
+radius = 0.2
+
+[node name="ProtoController" type="CharacterBody3D" unique_id=524202127]
+script = ExtResource("1_ucva2")
+
+[node name="Collider" type="CollisionShape3D" parent="." unique_id=607291741]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.9, 0)
+shape = SubResource("CapsuleShape3D_iof21")
+
+[node name="Head" type="Node3D" parent="." unique_id=4910002]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 1.7, 0)
+
+[node name="SpringArm3D" type="SpringArm3D" parent="Head" unique_id=461860352]
+shape = SubResource("SphereShape3D_wr06p")
+spring_length = 2.0
+
+[node name="Camera3D" type="Camera3D" parent="Head/SpringArm3D" unique_id=1828076357]
+
+[node name="Rogue_Hooded" parent="." unique_id=1742474264 instance=ExtResource("2_wr06p")]
+transform = Transform3D(-1, 0, -8.742278e-08, 0, 1, 0, 8.742278e-08, 0, -1, 0, 0, 0)

@@ -1,0 +1,18 @@
+[gd_resource type="StandardMaterial3D" format=3 uid="uid://7hnhqavbnwjk"]
+
+[ext_resource type="Texture2D" uid="uid://t7s2q4qxo087" path="res://MODELLI3D/red_wine_glass/textures/WineGlassMerged_baseColor.png" id="1_xcq3e"]
+[ext_resource type="Texture2D" uid="uid://buxxxd7cgflj4" path="res://MODELLI3D/red_wine_glass/textures/WineGlassMerged_metallicRoughness.png" id="2_h8yq5"]
+[ext_resource type="Texture2D" uid="uid://di3t6xk31u7yp" path="res://MODELLI3D/red_wine_glass/textures/WineGlassMerged_normal.png" id="3_3v2cy"]
+
+[resource]
+resource_name = "WineGlassMerged"
+transparency = 4
+cull_mode = 2
+albedo_texture = ExtResource("1_xcq3e")
+metallic_texture = ExtResource("2_h8yq5")
+roughness = 0.0
+roughness_texture = ExtResource("2_h8yq5")
+emission = Color(0.12184, 0, 0, 1)
+emission_energy_multiplier = 0.0
+normal_enabled = true
+normal_texture = ExtResource("3_3v2cy")

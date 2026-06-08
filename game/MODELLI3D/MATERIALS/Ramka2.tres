@@ -1,0 +1,7 @@
+[gd_resource type="StandardMaterial3D" format=3 uid="uid://c0hyo3knpsfes"]
+
+[resource]
+resource_name = "Ramka2"
+cull_mode = 2
+albedo_color = Color(0.66322863, 0.37996933, 0.2340494, 1)
+roughness = 0.9613137

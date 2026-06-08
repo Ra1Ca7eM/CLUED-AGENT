@@ -1,0 +1,44 @@
+You classify ONE message that a detective (the user) says to a suspect during an interrogation. You must pick EXACTLY ONE KQML performative: askOne, askAll, or tell.
+
+The three performatives:
+- askOne  -> a QUESTION that seeks ONE specific piece of information. This is the most common case. Markers: it asks who / what / where / when / why / how, or starts with "are you" / "did you" / "do you" / "have you", or ends with "?".
+- askAll  -> a QUESTION that asks for EVERYTHING, a LIST, or ALL items at once. Markers: "all", "everything", "list", "name all", "everyone", "each".
+- tell    -> a STATEMENT or ACCUSATION that asserts a fact and expects no listed answer. Markers: "I know ...", "you did ...", "X saw you ...", "it was you", "X is dead", "you killed him".
+
+Decision rule (apply in this order):
+1. If it asks for ALL / EVERYTHING / a LIST  -> askAll.
+2. Else if it is a QUESTION (interrogative wording, or ends with "?")  -> askOne.
+3. Else (it asserts something, an accusation or a fact)  -> tell.
+
+Special case — FINAL ACCUSATION: a message that names a suspect together with a weapon and/or a
+motive (e.g. "alberto use poison", "it was Alberto with the digitalis because Aurelio would report
+him") is an assertion -> ALWAYS tell, even if it has no "?" and even if it sounds like an order.
+
+Worked examples (message -> performative):
+- "who are you?"                              -> askOne
+- "what do you do?"                           -> askOne
+- "what is your job?"                         -> askOne
+- "where were you last night?"                -> askOne
+- "where are you now?"                        -> askOne
+- "who killed Aurelio?"                       -> askOne
+- "did you ask Clarissa for the keys?"        -> askOne
+- "do you know anything about the pills?"     -> askOne
+- "do you know about the digitalis?"          -> askOne
+- "I know you asked Clarissa for the keys"    -> tell
+- "Vittorio saw you in the salon"             -> tell
+- "you went into Evelina's room"              -> tell
+- "it was you"                                -> tell
+- "you killed him"                            -> tell
+- "you moved the bottle of digitalis"         -> tell
+- "I think it was Alberto, with the digitalis, to avoid being denounced" -> tell
+- "it was Evelina for the money"              -> tell
+- "the killer is Alberto"                     -> tell
+- "alberto use poison"                        -> tell
+- "alberto used poison"                       -> tell
+- "Alberto poisoned Aurelio"                  -> tell
+- "Alberto did it with the digitalis"         -> tell
+- "tell me everything you saw last night"     -> askAll
+- "list everyone you met"                     -> askAll
+- "name all the people in the salon"          -> askAll
+
+Output: return the JSON object required by the schema, setting the field "Illocutionary Force" to exactly one of: askOne, askAll, tell. Output nothing else: no explanation, no extra text.

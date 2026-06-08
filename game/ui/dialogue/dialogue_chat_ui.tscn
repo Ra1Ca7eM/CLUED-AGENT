@@ -1,0 +1,89 @@
+[gd_scene load_steps=3 format=3 uid="uid://c8dialoguechatui01"]
+
+[ext_resource type="Script" uid="uid://4qtny332cnwb" path="res://scripts/ui/dialogue_chat_ui.gd" id="1_chat"]
+[ext_resource type="StyleBoxFlat" path="res://ui/dialogue/styles/chat_panel.tres" id="2_panel"]
+
+[node name="DialogueChatUI" type="CanvasLayer"]
+layer = 8
+script = ExtResource("1_chat")
+
+[node name="ChatPanel" type="Panel" parent="."]
+unique_name_in_owner = true
+visible = false
+anchors_preset = -1
+anchor_left = 0.6
+anchor_top = 0.0
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+theme_override_styles/panel = ExtResource("2_panel")
+
+[node name="MarginContainer" type="MarginContainer" parent="ChatPanel"]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+theme_override_constants/margin_left = 18
+theme_override_constants/margin_top = 16
+theme_override_constants/margin_right = 18
+theme_override_constants/margin_bottom = 16
+
+[node name="VBox" type="VBoxContainer" parent="ChatPanel/MarginContainer"]
+layout_mode = 2
+theme_override_constants/separation = 12
+
+[node name="HeaderRow" type="HBoxContainer" parent="ChatPanel/MarginContainer/VBox"]
+layout_mode = 2
+
+[node name="HeaderLabel" type="Label" parent="ChatPanel/MarginContainer/VBox/HeaderRow"]
+unique_name_in_owner = true
+layout_mode = 2
+size_flags_horizontal = 3
+theme_override_colors/font_color = Color(0.85, 0.75, 0.42, 1)
+theme_override_font_sizes/font_size = 24
+text = "Sospetto"
+
+[node name="CloseButton" type="Button" parent="ChatPanel/MarginContainer/VBox/HeaderRow"]
+unique_name_in_owner = true
+layout_mode = 2
+theme_override_font_sizes/font_size = 18
+text = "X"
+
+[node name="HSeparator" type="HSeparator" parent="ChatPanel/MarginContainer/VBox"]
+layout_mode = 2
+
+[node name="MessageScroll" type="ScrollContainer" parent="ChatPanel/MarginContainer/VBox"]
+unique_name_in_owner = true
+layout_mode = 2
+size_flags_vertical = 3
+horizontal_scroll_mode = 0
+
+[node name="MessagesVBox" type="VBoxContainer" parent="ChatPanel/MarginContainer/VBox/MessageScroll"]
+unique_name_in_owner = true
+layout_mode = 2
+size_flags_horizontal = 3
+theme_override_constants/separation = 8
+
+[node name="InputRow" type="HBoxContainer" parent="ChatPanel/MarginContainer/VBox"]
+layout_mode = 2
+theme_override_constants/separation = 8
+
+[node name="MessageInput" type="LineEdit" parent="ChatPanel/MarginContainer/VBox/InputRow"]
+unique_name_in_owner = true
+layout_mode = 2
+size_flags_horizontal = 3
+theme_override_font_sizes/font_size = 16
+placeholder_text = "Scrivi un messaggio..."
+
+[node name="SendButton" type="Button" parent="ChatPanel/MarginContainer/VBox/InputRow"]
+unique_name_in_owner = true
+layout_mode = 2
+theme_override_font_sizes/font_size = 16
+text = "Invia"
+
+[connection signal="pressed" from="ChatPanel/MarginContainer/VBox/HeaderRow/CloseButton" to="." method="_on_close_pressed"]
+[connection signal="pressed" from="ChatPanel/MarginContainer/VBox/InputRow/SendButton" to="." method="_on_send_pressed"]
+[connection signal="text_submitted" from="ChatPanel/MarginContainer/VBox/InputRow/MessageInput" to="." method="_on_text_submitted"]

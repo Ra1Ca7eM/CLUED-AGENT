@@ -1,0 +1,10 @@
+[gd_resource type="ShaderMaterial" format=3 uid="uid://daf5pf25qw7gx"]
+
+[ext_resource type="Shader" uid="uid://0x2fk8co33cs" path="res://env/SelectCharacter/Materials/outline.gdshader" id="1_hmbt8"]
+
+[resource]
+render_priority = 0
+shader = ExtResource("1_hmbt8")
+shader_parameter/glow_color = Color(0.9744256, 0.8763198, 0.74015987, 1)
+shader_parameter/glow_power = 3.0
+shader_parameter/glow_intensity = 1.0

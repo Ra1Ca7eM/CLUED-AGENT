@@ -1,0 +1,8 @@
+[gd_scene format=3 uid="uid://3sm0irv2d8ml"]
+
+[ext_resource type="PackedScene" uid="uid://yani3bf15mgr" path="res://env/SelectCharacter/Room/chest_gold.gltf" id="1_e1caj"]
+
+[node name="chest_gold2" unique_id=1469110423 instance=ExtResource("1_e1caj")]
+
+[node name="chest_gold_lid" parent="chest_gold" parent_id_path=PackedInt32Array(76603632) index="0" unique_id=145665448]
+transform = Transform3D(1, 0, 0, 0, 0.76604444, 0.6427876, 0, -0.6427876, 0.76604444, 0, 0.5, -0.56488323)

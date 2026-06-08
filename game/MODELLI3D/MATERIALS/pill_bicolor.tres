@@ -1,0 +1,29 @@
+[gd_resource type="ShaderMaterial" format=3 uid="uid://ph11ckyi86y7"]
+
+[sub_resource type="Shader" id="Shader_1"]
+code = "shader_type spatial;
+
+uniform vec4 color_top : source_color = vec4(1.0, 0.0, 0.0, 1.0);
+uniform vec4 color_bottom : source_color = vec4(1.0, 1.0, 1.0, 1.0);
+uniform float split : hint_range(-1.0, 1.0) = 0.0;
+
+varying float local_y;
+
+void vertex() {
+	local_y = VERTEX.y;
+}
+
+void fragment() {
+	ALBEDO = (local_y > split) ? color_top.rgb : color_bottom.rgb;
+	ROUGHNESS = 0.3;
+	METALLIC = 0.1;
+}
+"
+
+[resource]
+resource_name = "pill_bicolor"
+render_priority = 0
+shader = SubResource("Shader_1")
+shader_parameter/color_top = Color(1, 0, 0, 1)
+shader_parameter/color_bottom = Color(1, 1, 1, 1)
+shader_parameter/split = 0.0

@@ -1,0 +1,490 @@
+[gd_scene format=3 uid="uid://x6vckjcuieya"]
+
+[ext_resource type="Shader" uid="uid://mi3gvvtqeltw" path="res://env/menu/sky.gdshader" id="1_1ihp8"]
+[ext_resource type="PackedScene" uid="uid://8h3pyiltenot" path="res://env/menu/X_ghosthouse.glb" id="1_roofg"]
+[ext_resource type="MultiMesh" uid="uid://cfhmvt2yjxsaf" path="res://env/menu/multi_mesh_erba.res" id="3_dphqy"]
+[ext_resource type="PackedScene" uid="uid://bjekusc6k8wo0" path="res://env/menu/nature/tree_dead_large_decorated.gltf" id="4_00hrw"]
+[ext_resource type="Script" uid="uid://cjnvknx3dw831" path="res://env/menu/camera_3d.gd" id="4_obtxq"]
+[ext_resource type="Script" uid="uid://h4kdi0pfpx0n" path="res://env/menu/canvas_layer.gd" id="5_4jekd"]
+[ext_resource type="AudioStream" uid="uid://c0mwk6e6263o1" path="res://Mansion Clue Room.mp3" id="6_0pi1h"]
+[ext_resource type="Texture2D" uid="uid://nbsk5esg32ly" path="res://env/menu/buttons/START.png" id="6_bjveh"]
+[ext_resource type="PackedScene" uid="uid://7xiftljvwkuy" path="res://env/menu/nature/tree_dead_large.gltf" id="6_gj2n5"]
+[ext_resource type="PackedScene" uid="uid://g0sx41bijgy2" path="res://env/menu/nature/fence_seperate_broken.gltf" id="7_s7723"]
+[ext_resource type="Texture2D" uid="uid://r0drmc754ppl" path="res://env/menu/buttons/START_HOVER.png" id="7_ujx55"]
+[ext_resource type="PackedScene" uid="uid://cvd3ggcb63n42" path="res://env/menu/nature/fence_broken.gltf" id="8_hkmjv"]
+[ext_resource type="Texture2D" uid="uid://b22dq5s3jphcy" path="res://env/menu/buttons/OPTION.png" id="8_obkgm"]
+[ext_resource type="PackedScene" uid="uid://c5xdstb0ce53e" path="res://env/menu/nature/fence_seperate.gltf" id="9_8jlkv"]
+[ext_resource type="Texture2D" uid="uid://bv0dwpd4qfsg1" path="res://env/menu/buttons/OPTION_HOVER.png" id="9_dphqy"]
+[ext_resource type="Texture2D" uid="uid://45sp56lgkpsa" path="res://env/menu/buttons/CREDITS.png" id="10_48geu"]
+[ext_resource type="Texture2D" uid="uid://bdprhu5yy2xuk" path="res://env/menu/buttons/CREDITS_HOVER.png" id="11_lsfok"]
+[ext_resource type="PackedScene" uid="uid://clnnu3yup2d8y" path="res://env/menu/nature/arch_gate.gltf" id="11_yabnl"]
+[ext_resource type="PackedScene" uid="uid://bt01xa7u3jmrn" path="res://env/menu/nature/fence.gltf" id="12_gj2n5"]
+[ext_resource type="Texture2D" uid="uid://o0ic05p2j0eh" path="res://env/menu/buttons/QUIT.png" id="12_nj0gg"]
+[ext_resource type="Texture2D" uid="uid://dr8f5jda6iavb" path="res://env/menu/buttons/QUIT_HOVER.png" id="13_p2n5j"]
+[ext_resource type="PackedScene" uid="uid://p4mct0q5fjxk" path="res://env/menu/nature/crypt.gltf" id="13_vjquu"]
+[ext_resource type="PackedScene" uid="uid://bmne6qf2gy7ep" path="res://env/menu/nature/lantern_hanging.gltf" id="14_nca28"]
+[ext_resource type="PackedScene" uid="uid://cko15g7i05drx" path="res://env/menu/nature/coffin_decorated.gltf" id="15_q2ft7"]
+[ext_resource type="PackedScene" uid="uid://b7c4wimffmgvf" path="res://env/menu/nature/post_lantern.gltf" id="17_vjquu"]
+[ext_resource type="PackedScene" uid="uid://q2oyjeaqgc8y" path="res://env/menu/nature/tree_pine_orange_large.gltf" id="18_dkhwa"]
+[ext_resource type="PackedScene" uid="uid://c1e4kh626l6nf" path="res://env/menu/nature/skull_candle.gltf" id="19_e63ha"]
+[ext_resource type="PackedScene" uid="uid://bmu24gebn8tkb" path="res://env/menu/nature/ribcage.gltf" id="20_jqd2d"]
+[ext_resource type="PackedScene" uid="uid://dxbq0p174pps3" path="res://env/menu/nature/grave_A_destroyed.gltf" id="21_bjveh"]
+
+[sub_resource type="ShaderMaterial" id="ShaderMaterial_1ihp8"]
+shader = ExtResource("1_1ihp8")
+shader_parameter/sky_color = Color(0.019607844, 0.039215688, 0.050980393, 1)
+shader_parameter/horizon_color = Color(0.101960786, 0.14901961, 0.14901961, 1)
+shader_parameter/moon_color = Color(0.8, 0.9, 1, 1)
+shader_parameter/moon_direction = Vector3(0, 0.5, -1)
+shader_parameter/moon_size = 0.05
+shader_parameter/moon_blur = 0.1
+
+[sub_resource type="Sky" id="Sky_obtxq"]
+sky_material = SubResource("ShaderMaterial_1ihp8")
+
+[sub_resource type="Environment" id="Environment_4jekd"]
+background_mode = 2
+background_energy_multiplier = 2.72
+sky = SubResource("Sky_obtxq")
+sky_rotation = Vector3(0, -0.061086524, -1.3770648)
+ambient_light_source = 3
+tonemap_mode = 2
+glow_enabled = true
+glow_normalized = true
+glow_intensity = 0.5
+glow_bloom = 0.1
+fog_enabled = true
+fog_light_color = Color(0.20051634, 0.22125834, 0.25353256, 1)
+fog_sky_affect = 0.605
+fog_depth_begin = 0.0
+fog_depth_end = 150.0
+volumetric_fog_enabled = true
+volumetric_fog_density = 0.02
+volumetric_fog_albedo = Color(0.10980392, 0.20784314, 0.10980392, 1)
+volumetric_fog_emission = Color(0, 0, 0.003921569, 1)
+volumetric_fog_emission_energy = 79.67
+adjustment_enabled = true
+adjustment_brightness = 1.22
+adjustment_contrast = 1.2
+adjustment_saturation = 0.8
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_hkmjv"]
+albedo_color = Color(0, 0.12941177, 0, 1)
+
+[sub_resource type="PlaneMesh" id="PlaneMesh_8jlkv"]
+
+[sub_resource type="StyleBoxTexture" id="StyleBoxTexture_p3jj1"]
+texture = ExtResource("6_bjveh")
+
+[sub_resource type="StyleBoxTexture" id="StyleBoxTexture_48geu"]
+texture = ExtResource("7_ujx55")
+
+[sub_resource type="StyleBoxTexture" id="StyleBoxTexture_djt5f"]
+texture = ExtResource("7_ujx55")
+
+[sub_resource type="StyleBoxTexture" id="StyleBoxTexture_dphqy"]
+texture = ExtResource("8_obkgm")
+
+[sub_resource type="StyleBoxTexture" id="StyleBoxTexture_lsfok"]
+texture = ExtResource("9_dphqy")
+
+[sub_resource type="StyleBoxTexture" id="StyleBoxTexture_yo043"]
+texture = ExtResource("9_dphqy")
+
+[sub_resource type="StyleBoxTexture" id="StyleBoxTexture_hexhr"]
+texture = ExtResource("10_48geu")
+
+[sub_resource type="StyleBoxTexture" id="StyleBoxTexture_nj0gg"]
+texture = ExtResource("11_lsfok")
+
+[sub_resource type="StyleBoxTexture" id="StyleBoxTexture_o3pgt"]
+texture = ExtResource("11_lsfok")
+
+[sub_resource type="StyleBoxTexture" id="StyleBoxTexture_k1vyx"]
+texture = ExtResource("12_nj0gg")
+
+[sub_resource type="StyleBoxTexture" id="StyleBoxTexture_p2n5j"]
+texture = ExtResource("13_p2n5j")
+
+[sub_resource type="StyleBoxTexture" id="StyleBoxTexture_m5rlv"]
+texture = ExtResource("13_p2n5j")
+
+[node name="HouseMenu" type="Node3D" unique_id=1738778776]
+
+[node name="WorldEnvironment" type="WorldEnvironment" parent="." unique_id=1132649988]
+environment = SubResource("Environment_4jekd")
+
+[node name="DirectionalLight3D" type="DirectionalLight3D" parent="WorldEnvironment" unique_id=803859048]
+transform = Transform3D(-0.8862036, -0.14777258, 0.43909732, 0.15845656, 0.7939345, 0.58699185, -0.4353558, 0.5897721, -0.68017215, 17.350014, 84.950005, -203.5498)
+light_color = Color(0.8392157, 0.90588236, 1, 1)
+light_energy = 0.7
+shadow_enabled = true
+
+[node name="X_ghosthouse" parent="WorldEnvironment" unique_id=1722139881 instance=ExtResource("1_roofg")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 1.1, 0, 1.65)
+
+[node name="MeshInstance3D" type="MeshInstance3D" parent="WorldEnvironment" unique_id=1184063628]
+transform = Transform3D(70, 0, 0, 0, 70, 0, 0, 0, 49, 0, 0, -21.300001)
+material_override = SubResource("StandardMaterial3D_hkmjv")
+mesh = SubResource("PlaneMesh_8jlkv")
+skeleton = NodePath("../..")
+
+[node name="MultiMeshInstance3D" type="MultiMeshInstance3D" parent="WorldEnvironment" unique_id=837491758]
+transform = Transform3D(70, 0, 0, 0, 70, 0, 0, 0, 70, 0, 0, 0)
+cast_shadow = 0
+visibility_range_end = 100.0
+multimesh = ExtResource("3_dphqy")
+
+[node name="OmniLight3D" type="OmniLight3D" parent="WorldEnvironment" unique_id=86852988]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.25, 12.05, 5.3)
+light_color = Color(0.8571576, 0.5813558, 0.32258692, 1)
+light_energy = 8.045
+light_indirect_energy = 8.762
+light_volumetric_fog_energy = 2.553
+light_size = 0.09
+
+[node name="OmniLight3D10" type="OmniLight3D" parent="WorldEnvironment" unique_id=158516242]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.95, 5.75, 5.3)
+light_color = Color(0.8571576, 0.5813558, 0.32258692, 1)
+light_energy = 8.045
+light_indirect_energy = 8.762
+light_volumetric_fog_energy = 2.553
+light_size = 1.0
+omni_range = 15.934
+
+[node name="OmniLight3D11" type="OmniLight3D" parent="WorldEnvironment" unique_id=1999952950]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -5.2500005, 5.75, 5.4500003)
+light_color = Color(0.8571576, 0.5813558, 0.32258692, 1)
+light_energy = 8.045
+light_indirect_energy = 8.762
+light_volumetric_fog_energy = 2.553
+light_size = 0.09
+
+[node name="OmniLight3D12" type="OmniLight3D" parent="WorldEnvironment" unique_id=913674826]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -5.1000004, 12, 5.3)
+light_color = Color(0.8571576, 0.5813558, 0.32258692, 1)
+light_energy = 8.045
+light_indirect_energy = 8.762
+light_volumetric_fog_energy = 2.553
+light_size = 0.09
+
+[node name="OmniLight3D13" type="OmniLight3D" parent="WorldEnvironment" unique_id=1411546511]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -9.750001, 12, 0.3000002)
+light_color = Color(0.8571576, 0.5813558, 0.32258692, 1)
+light_energy = 8.045
+light_indirect_energy = 8.762
+light_volumetric_fog_energy = 2.553
+light_size = 0.09
+
+[node name="OmniLight3D14" type="OmniLight3D" parent="WorldEnvironment" unique_id=963206073]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -9.750001, 17.95, 0.3000002)
+light_color = Color(0.8571576, 0.5813558, 0.32258692, 1)
+light_energy = 8.045
+light_indirect_energy = 8.762
+light_volumetric_fog_energy = 2.553
+light_size = 0.09
+
+[node name="OmniLight3D15" type="OmniLight3D" parent="WorldEnvironment" unique_id=1729759148]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -9.250001, 4.750001, 0.3000002)
+light_color = Color(0.8571576, 0.5813558, 0.32258692, 1)
+light_energy = 8.045
+light_indirect_energy = 8.762
+light_volumetric_fog_energy = 2.553
+light_size = 0.09
+
+[node name="OmniLight3D19" type="OmniLight3D" parent="WorldEnvironment" unique_id=2143890489]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -19.900002, 5.650001, -18.550001)
+light_color = Color(0.8571576, 0.5813558, 0.32258692, 1)
+light_energy = 8.045
+light_indirect_energy = 8.762
+light_volumetric_fog_energy = 2.553
+light_size = 0.09
+omni_range = 10.585
+
+[node name="OmniLight3D21" type="OmniLight3D" parent="WorldEnvironment" unique_id=231229447]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -22.200003, 5.650001, 10.299998)
+light_color = Color(0.8571576, 0.5813558, 0.32258692, 1)
+light_energy = 8.045
+light_indirect_energy = 8.762
+light_volumetric_fog_energy = 2.553
+light_size = 0.09
+omni_range = 10.585
+
+[node name="OmniLight3D23" type="OmniLight3D" parent="WorldEnvironment" unique_id=1509584187]
+transform = Transform3D(0.8660254, 0, 0.5, 0, 1, 0, -0.5, 0, 0.8660254, -20.734394, 5.1000013, -7.541748)
+light_color = Color(0.8571576, 0.5813558, 0.32258692, 1)
+light_energy = 8.045
+light_indirect_energy = 8.762
+light_volumetric_fog_energy = 2.553
+light_size = 0.09
+omni_range = 10.585
+
+[node name="OmniLight3D22" type="OmniLight3D" parent="WorldEnvironment" unique_id=396322979]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 28.999998, 5.650001, -4.250002)
+light_color = Color(0.8571576, 0.5813558, 0.32258692, 1)
+light_energy = 8.045
+light_indirect_energy = 8.762
+light_volumetric_fog_energy = 2.553
+light_size = 0.09
+omni_range = 17.058
+
+[node name="OmniLight3D2" type="OmniLight3D" parent="WorldEnvironment" unique_id=706730403]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.050000012, 17.05, 5.1000004)
+light_color = Color(0.8571576, 0.5813558, 0.32258692, 1)
+light_energy = 8.045
+light_indirect_energy = 8.762
+light_volumetric_fog_energy = 2.553
+light_size = 0.09
+
+[node name="OmniLight3D3" type="OmniLight3D" parent="WorldEnvironment" unique_id=1585734759]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -5.2500005, 17.05, 5.1000004)
+light_color = Color(0.8571576, 0.5813558, 0.32258692, 1)
+light_energy = 8.045
+light_indirect_energy = 8.762
+light_volumetric_fog_energy = 2.553
+light_size = 0.09
+
+[node name="OmniLight3D4" type="OmniLight3D" parent="WorldEnvironment" unique_id=1855191061]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 6.35, 17.05, 6.6500006)
+light_color = Color(0.8571576, 0.5813558, 0.32258692, 1)
+light_energy = 8.045
+light_indirect_energy = 8.762
+light_volumetric_fog_energy = 2.553
+light_size = 0.09
+
+[node name="OmniLight3D5" type="OmniLight3D" parent="WorldEnvironment" unique_id=1957337747]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 6.35, 11.499999, 6.6500006)
+light_color = Color(0.8571576, 0.5813558, 0.32258692, 1)
+light_energy = 8.045
+light_indirect_energy = 8.762
+light_volumetric_fog_energy = 2.553
+light_size = 0.09
+
+[node name="OmniLight3D6" type="OmniLight3D" parent="WorldEnvironment" unique_id=348558484]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 6.5, 5.349999, 6.8500004)
+light_color = Color(0.8571576, 0.5813558, 0.32258692, 1)
+light_energy = 8.045
+light_indirect_energy = 8.762
+light_volumetric_fog_energy = 2.553
+light_size = 0.09
+
+[node name="OmniLight3D7" type="OmniLight3D" parent="WorldEnvironment" unique_id=1508244159]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 9.5, 5.249999, 5.65)
+light_color = Color(0.8571576, 0.5813558, 0.32258692, 1)
+light_energy = 8.045
+light_indirect_energy = 8.762
+light_volumetric_fog_energy = 2.553
+light_size = 0.09
+
+[node name="OmniLight3D8" type="OmniLight3D" parent="WorldEnvironment" unique_id=977326981]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 11, 11.65, 0.05000019)
+light_color = Color(0.8571576, 0.5813558, 0.32258692, 1)
+light_energy = 8.045
+light_indirect_energy = 8.762
+light_volumetric_fog_energy = 2.553
+light_size = 0.09
+
+[node name="OmniLight3D16" type="OmniLight3D" parent="WorldEnvironment" unique_id=17762623]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 11, 11.65, 5.8)
+light_color = Color(0.8571576, 0.5813558, 0.32258692, 1)
+light_energy = 8.045
+light_indirect_energy = 8.762
+light_volumetric_fog_energy = 2.553
+light_size = 0.09
+
+[node name="OmniLight3D17" type="OmniLight3D" parent="WorldEnvironment" unique_id=776047052]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 11, 18.25, 0.6500001)
+light_color = Color(0.8571576, 0.5813558, 0.32258692, 1)
+light_energy = 8.045
+light_indirect_energy = 8.762
+light_volumetric_fog_energy = 2.553
+light_size = 0.09
+
+[node name="OmniLight3D9" type="OmniLight3D" parent="WorldEnvironment" unique_id=102216237]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 10.9, 5.3999996, 0.05000019)
+light_color = Color(0.8571576, 0.5813558, 0.32258692, 1)
+light_energy = 8.045
+light_indirect_energy = 8.762
+light_volumetric_fog_energy = 2.553
+light_size = 0.09
+
+[node name="OmniLight3D18" type="OmniLight3D" parent="WorldEnvironment" unique_id=2004052551]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 37.75, 25)
+light_energy = 13.179
+omni_range = 39.254
+
+[node name="OmniLight3D20" type="OmniLight3D" parent="WorldEnvironment" unique_id=393431247]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -17.650002, 31.950003, -9.25)
+light_energy = 13.179
+omni_range = 34.25
+
+[node name="Camera3D" type="Camera3D" parent="." unique_id=1077697743 node_paths=PackedStringArray("target_casa", "target_porta", "schermo_bianco")]
+transform = Transform3D(1, 0, 0, 0, 0.9659259, -0.25881904, 0, 0.25881904, 0.9659259, -0.64999986, 4.3, 24.050001)
+script = ExtResource("4_obtxq")
+target_casa = NodePath("../TargetCasa")
+target_porta = NodePath("../TargetPorta")
+schermo_bianco = NodePath("../CanvasLayer/SchermoBianco")
+
+[node name="TargetCasa" type="Marker3D" parent="." unique_id=1677394006]
+transform = Transform3D(1, 0, 0, 0, 0.9659259, -0.25881904, 0, 0.25881904, 0.9659259, 0.24999994, 10, 5.35)
+
+[node name="TargetPorta" type="Marker3D" parent="." unique_id=1583109506]
+transform = Transform3D(1, 0, 0, 0, 0.9659259, -0.25881904, 0, 0.25881904, 0.9659259, 0.9, 5.1, 4.9)
+
+[node name="CanvasLayer" type="CanvasLayer" parent="." unique_id=715259820 node_paths=PackedStringArray("telecamera_menu")]
+script = ExtResource("5_4jekd")
+telecamera_menu = NodePath("../Camera3D")
+
+[node name="Control" type="Control" parent="CanvasLayer" unique_id=700684025]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+
+[node name="BtnStart" type="Button" parent="CanvasLayer/Control" unique_id=71064389]
+layout_mode = 1
+offset_right = 235.5
+offset_bottom = 187.5
+size_flags_horizontal = 0
+theme_override_styles/normal = SubResource("StyleBoxTexture_p3jj1")
+theme_override_styles/pressed = SubResource("StyleBoxTexture_48geu")
+theme_override_styles/hover = SubResource("StyleBoxTexture_djt5f")
+
+[node name="BtnOptions" type="Button" parent="CanvasLayer/Control" unique_id=56061935]
+custom_minimum_size = Vector2(235.5, 187.5)
+layout_mode = 1
+anchors_preset = 4
+anchor_top = 0.5
+anchor_bottom = 0.5
+offset_top = -93.75
+offset_right = 235.5
+offset_bottom = 93.75
+grow_vertical = 2
+size_flags_horizontal = 0
+size_flags_vertical = 8
+theme_override_styles/normal = SubResource("StyleBoxTexture_dphqy")
+theme_override_styles/pressed = SubResource("StyleBoxTexture_lsfok")
+theme_override_styles/hover = SubResource("StyleBoxTexture_yo043")
+
+[node name="BtnCredits" type="Button" parent="CanvasLayer/Control" unique_id=1324915324]
+custom_minimum_size = Vector2(235.5, 187.5)
+layout_mode = 1
+anchors_preset = 2
+anchor_top = 1.0
+anchor_bottom = 1.0
+offset_top = -187.5
+offset_right = 235.5
+grow_vertical = 0
+scale = Vector2(0.99900216, 1)
+size_flags_horizontal = 8
+size_flags_vertical = 0
+theme_override_styles/normal = SubResource("StyleBoxTexture_hexhr")
+theme_override_styles/pressed = SubResource("StyleBoxTexture_nj0gg")
+theme_override_styles/hover = SubResource("StyleBoxTexture_o3pgt")
+
+[node name="BtnQuit" type="Button" parent="CanvasLayer/Control" unique_id=1725591959]
+custom_minimum_size = Vector2(235.5, 187.5)
+layout_mode = 1
+anchors_preset = 3
+anchor_left = 1.0
+anchor_top = 1.0
+anchor_right = 1.0
+anchor_bottom = 1.0
+offset_left = -235.5
+offset_top = -187.5
+grow_horizontal = 0
+grow_vertical = 0
+theme_override_styles/normal = SubResource("StyleBoxTexture_k1vyx")
+theme_override_styles/pressed = SubResource("StyleBoxTexture_p2n5j")
+theme_override_styles/hover = SubResource("StyleBoxTexture_m5rlv")
+
+[node name="SchermoBianco" type="ColorRect" parent="CanvasLayer" unique_id=516026414]
+modulate = Color(1, 1, 1, 0)
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+mouse_filter = 2
+
+[node name="AudioStreamPlayer2D" type="AudioStreamPlayer2D" parent="." unique_id=1905416440]
+stream = ExtResource("6_0pi1h")
+volume_db = -7.61
+autoplay = true
+
+[node name="Node3D" type="Node3D" parent="." unique_id=858193079]
+transform = Transform3D(2.598076, 0, -1.5, 0, 3, 0, 1.5, 0, 2.598076, -27.45, 0, -1.1000004)
+
+[node name="fence_seperate_broken2SX" parent="Node3D" unique_id=22899627 instance=ExtResource("7_s7723")]
+transform = Transform3D(0.86602545, 0, 0.50000006, 0, 1.0000001, 0, -0.50000006, 0, 0.86602545, 3.5910573, 0, -0.8801069)
+
+[node name="fence_broken2SX" parent="Node3D" unique_id=1649785999 instance=ExtResource("8_hkmjv")]
+transform = Transform3D(1.0000001, 0, 0, 0, 1.0000001, 0, 0, 0, 1.0000001, 0, 0, 0)
+
+[node name="fence_seperate2SX" parent="Node3D" unique_id=974503563 instance=ExtResource("9_8jlkv")]
+transform = Transform3D(0.50000006, 0, -0.86602545, 0, 1.0000002, 0, 0.86602545, 0, 0.50000006, -2.9584084, 0, -1.8907785)
+
+[node name="fence_broken3SX" parent="Node3D" unique_id=184396723 instance=ExtResource("8_hkmjv")]
+transform = Transform3D(-0.5000001, 0, 0.86602545, 0, 1.0000001, 0, -0.86602545, 0, -0.5000001, -4.937277, 0, -5.2516117)
+
+[node name="fence_seperate_broken3SX" parent="Node3D" unique_id=539821132 instance=ExtResource("7_s7723")]
+transform = Transform3D(0.49999994, 0, 0.8660254, 0, 1.0000006, 0, -0.8660254, 0, 0.49999994, -4.838998, 0, -8.714722)
+
+[node name="arch_gate2" parent="Node3D" unique_id=1001705286 instance=ExtResource("11_yabnl")]
+transform = Transform3D(0.8660254, 0, 0.5, 0, 1.0000006, 0, -0.5, 0, 0.8660254, 2.5241318, 0, -13.928078)
+
+[node name="fence2SX" parent="Node3D" unique_id=1666905934 instance=ExtResource("12_gj2n5")]
+transform = Transform3D(1.2124356, 0, 0.50000006, 0, 1.0000002, 0, -0.70000005, 0, 0.86602545, -1.4451513, 0, -11.63641)
+
+[node name="fence_seperate_broken4DX" parent="Node3D" unique_id=1952326279 instance=ExtResource("7_s7723")]
+transform = Transform3D(-0.5, 0, 0.8660254, 0, 1.0000007, 0, -0.8660254, 0, -0.5, 16.597267, 0, -12.719371)
+
+[node name="fence_broken4DX" parent="Node3D" unique_id=506147304 instance=ExtResource("8_hkmjv")]
+transform = Transform3D(0.50000024, 0, 0.8660255, 0, 1.0000006, 0, -0.86602587, 0, 0.50000024, 16.811024, 0, -9.282458)
+
+[node name="fence_seperate3DX" parent="Node3D" unique_id=967022287 instance=ExtResource("9_8jlkv")]
+transform = Transform3D(-0.8660259, 0, -0.50000024, 0, 1.000001, 0, 0.50000024, 0, -0.8660259, 14.1561365, 0, -6.6142015)
+
+[node name="fence_broken5DX" parent="Node3D" unique_id=687158939 instance=ExtResource("8_hkmjv")]
+transform = Transform3D(1.2124356, 0, 0.5000001, 0, 1.0000001, 0, -0.7000001, 0, 0.86602545, 6.5261507, 0, -16.296383)
+
+[node name="fence_seperate_broken5DX" parent="Node3D" unique_id=1748356073 instance=ExtResource("7_s7723")]
+transform = Transform3D(-1.2000002, 0, -1.1920929e-07, 0, 1.0000002, 0, 1.7881393e-07, 0, -1.0000002, 11.239769, 0, -17.632153)
+
+[node name="fence3DX" parent="Node3D" unique_id=272774356 instance=ExtResource("12_gj2n5")]
+transform = Transform3D(0.49999997, 0, -0.8660254, 0, 1.0000006, 0, 0.8660254, 0, 0.49999997, 14.622267, 0, -16.140177)
+
+[node name="crypt2" parent="Node3D" unique_id=1431319456 instance=ExtResource("13_vjquu")]
+transform = Transform3D(0.17101006, 0, 0.4698463, 0, 0.50000024, 0, -0.4698463, 0, 0.17101006, -2.5330992, 0, -7.1207895)
+
+[node name="lantern_hanging2" parent="Node3D" unique_id=400938293 instance=ExtResource("14_nca28")]
+transform = Transform3D(0.28867516, 0, 0.16666669, 0, 0.33333337, 0, -0.16666669, 0, 0.28867516, -0.8432703, 2.2166672, -6.4605865)
+
+[node name="post_lantern2" parent="Node3D" unique_id=565365904 instance=ExtResource("17_vjquu")]
+transform = Transform3D(-0.34202015, 0, -0.93969274, 0, 1.0000001, 0, 0.93969274, 0, -0.34202015, 16.938374, 0, -10.395215)
+
+[node name="tree_dead_large_decorated2" parent="Node3D" unique_id=1504500254 instance=ExtResource("4_00hrw")]
+transform = Transform3D(0.17364815, 0, 0.98480785, 0, 1.0000002, 0, -0.98480785, 0, 0.17364815, 3.6012282, 0, 1.4041767)
+
+[node name="coffin_decorated2" parent="Node3D" unique_id=1076080438 instance=ExtResource("15_q2ft7")]
+transform = Transform3D(0.98480785, 0, -0.17364815, 0, 1.0000001, 0, 0.17364815, 0, 0.98480785, 13.878373, 0, -10.495289)
+
+[node name="tree_dead_large2" parent="Node3D" unique_id=1784683675 instance=ExtResource("6_gj2n5")]
+transform = Transform3D(0.17364815, 0, 0.98480785, 0, 1.0000004, 0, -0.98480785, 0, 0.17364815, 10.700468, 0, -12.932918)
+
+[node name="tree_pine_orange_large2" parent="Node3D" unique_id=350698190 instance=ExtResource("18_dkhwa")]
+transform = Transform3D(0.86602545, 0, 0.50000006, 0, 1.0000006, 0, -0.50000006, 0, 0.86602545, 20.112019, 0, -5.664974)
+
+[node name="skull_candle2" parent="Node3D" unique_id=263606057 instance=ExtResource("19_e63ha")]
+transform = Transform3D(0.17364821, 0, 0.98480785, 0, 1.0000002, 0, -0.98480785, 0, 0.17364821, 0.6761689, 0.4333334, -2.8184345)
+
+[node name="ribcage2" parent="Node3D" unique_id=490612288 instance=ExtResource("20_jqd2d")]
+transform = Transform3D(0.86602545, 0, 0.50000006, 0, 1.0000001, 0, -0.50000006, 0, 0.86602545, 1.6601171, 0.7333334, -3.6912603)
+
+[node name="grave_A_destroyed2" parent="Node3D" unique_id=878297722 instance=ExtResource("21_bjveh")]
+transform = Transform3D(0.98480785, 0, -0.17364815, 0, 1.0000002, 0, 0.17364815, 0, 0.98480785, 14.250776, 0, -12.750267)
+
+[connection signal="pressed" from="CanvasLayer/Control/BtnStart" to="CanvasLayer" method="_on_btn_start_pressed"]
+[connection signal="pressed" from="CanvasLayer/Control/BtnQuit" to="CanvasLayer" method="_on_btn_quit_pressed"]

@@ -1,0 +1,7 @@
+[gd_resource type="StandardMaterial3D" format=3 uid="uid://kn2gvoda82ry"]
+
+[resource]
+resource_name = "carpetBlue"
+albedo_color = Color(0.6311931, 0.746212, 0.9395347, 1)
+metallic = 0.5
+emission_enabled = true

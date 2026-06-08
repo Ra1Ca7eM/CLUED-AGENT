@@ -1,0 +1,11 @@
+[gd_scene format=3 uid="uid://cjirda8r2t40j"]
+
+[ext_resource type="PackedScene" uid="uid://d4i8gp5dk1wdw" path="res://env/room/kitchen/Obj/fridge_A_decorated.gltf" id="1_hjvoh"]
+
+[node name="fridge_A_decorated2" unique_id=1490228108 instance=ExtResource("1_hjvoh")]
+
+[node name="fridge_A_decorated_door_bottom" parent="fridge_A_decorated" parent_id_path=PackedInt32Array(692878484) index="0" unique_id=2120323668]
+transform = Transform3D(-0.64278764, -6.696973e-08, -0.76604444, 0, 1, -8.742278e-08, -0.76604444, 5.619428e-08, 0.64278764, -0.8499939, 0.7999973, 0.5)
+
+[node name="fridge_A_decorated_door_top" parent="fridge_A_decorated" parent_id_path=PackedInt32Array(692878484) index="1" unique_id=830188373]
+transform = Transform3D(-0.49999997, -7.5710346e-08, -0.86602545, 0, 1, -8.742278e-08, -0.86602545, 4.3711385e-08, 0.49999997, -0.84999394, 1.8999977, 0.5)

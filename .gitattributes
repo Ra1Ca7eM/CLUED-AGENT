@@ -1,0 +1,56 @@
+# Text files: auto-detect and normalize EOL to LF on commit.
+* text=auto eol=lf
+
+# =====================================================================
+# BINARY ASSETS — NEVER treat as text, NEVER normalize line endings.
+# This is critical for a Godot project: without these overrides, EOL
+# normalization corrupts textures, meshes, audio and binary resources
+# (and the .import metadata that carries per-animation loop settings),
+# which is exactly what broke the previous GitHub upload.
+# =====================================================================
+
+# --- Images / textures ---
+*.png   binary
+*.jpg   binary
+*.jpeg  binary
+*.webp  binary
+*.bmp   binary
+*.tga   binary
+*.gif   binary
+*.exr   binary
+*.hdr   binary
+*.ico   binary
+*.dds   binary
+*.ktx   binary
+*.basis binary
+*.psd   binary
+
+# --- 3D models / buffers ---
+*.glb   binary
+*.bin   binary
+*.fbx   binary
+*.blend binary
+*.obj   binary
+
+# --- Audio ---
+*.mp3   binary
+*.ogg   binary
+*.wav   binary
+
+# --- Fonts ---
+*.ttf   binary
+*.otf   binary
+*.woff  binary
+*.woff2 binary
+
+# --- Godot binary resources ---
+*.res   binary
+*.scn   binary
+*.ctex  binary
+
+# --- Java ---
+*.jar   binary
+*.class binary
+
+# NOTE: .gltf, .import, .tres, .tscn, .uid, .gd, .gdshader, .json are
+# text (handled by `text=auto` above) and are safe to normalize.

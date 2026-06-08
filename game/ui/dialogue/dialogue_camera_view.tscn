@@ -1,0 +1,9 @@
+[gd_scene load_steps=2 format=3 uid="uid://c8dialoguecamera01"]
+
+[ext_resource type="Script" uid="uid://h1g73clvgd58" path="res://scripts/dialogue/dialogue_camera_view.gd" id="1_cam"]
+
+[node name="DialogueCameraView" type="Node3D"]
+script = ExtResource("1_cam")
+
+[node name="Camera3D" type="Camera3D" parent="."]
+near = 0.04

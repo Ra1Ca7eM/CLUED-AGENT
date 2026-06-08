@@ -1,0 +1,1009 @@
+[gd_scene format=3 uid="uid://c27igaxgj8i2q"]
+
+[ext_resource type="Script" uid="uid://dqrl5rtawyiqj" path="res://env/SelectCharacter/manager_selezione.gd" id="1_by3ij"]
+[ext_resource type="PackedScene" uid="uid://di78atstjsn7k" path="res://env/SelectCharacter/Room/plaque.gltf" id="1_pr3o2"]
+[ext_resource type="Script" uid="uid://c8en6ss3hgif5" path="res://env/SelectCharacter/camera_3d.gd" id="2_a6hu6"]
+[ext_resource type="PackedScene" uid="uid://c88kcdnfsge67" path="res://env/SelectCharacter/Room/floor_dirt_small_B.gltf" id="2_b6ye1"]
+[ext_resource type="PackedScene" uid="uid://cbm5vx5fekbk5" path="res://Assets/Scenes/barbarian.tscn" id="2_eniin"]
+[ext_resource type="PackedScene" uid="uid://c1owrmuf36jfj" path="res://Assets/Scenes/knight.tscn" id="3_3g37g"]
+[ext_resource type="Script" uid="uid://3vip6h6oddn" path="res://env/SelectCharacter/area_3d.gd" id="3_a6hu6"]
+[ext_resource type="PackedScene" uid="uid://bfxy5hfkskf7o" path="res://env/SelectCharacter/Room/wall/wall_shelves.gltf" id="3_e3ibo"]
+[ext_resource type="PackedScene" uid="uid://dn03lox7t66i8" path="res://env/SelectCharacter/Room/floor_wood_small.gltf" id="3_y6q5d"]
+[ext_resource type="PackedScene" uid="uid://d3g32as4chcuj" path="res://env/SelectCharacter/Room/floor_tile_big_grate.gltf" id="4_1kr0m"]
+[ext_resource type="PackedScene" uid="uid://ccjadcylk1n64" path="res://Assets/Scenes/mage.tscn" id="4_a6hu6"]
+[ext_resource type="PackedScene" uid="uid://2cfwbccjfefm" path="res://Assets/Scenes/ranger.tscn" id="5_by3ij"]
+[ext_resource type="PackedScene" uid="uid://bl7qqfsejcsoh" path="res://env/SelectCharacter/Room/floor_tile_small_broken_B.gltf" id="5_suqyk"]
+[ext_resource type="PackedScene" uid="uid://bvjrv5wgvqocm" path="res://Assets/Scenes/rogue.tscn" id="6_cliai"]
+[ext_resource type="PackedScene" uid="uid://d5g2iwqhaq4a" path="res://env/SelectCharacter/Room/banner_shield_green.gltf" id="6_d5256"]
+[ext_resource type="Texture2D" uid="uid://2tt5hdisklcs" path="res://env/SelectCharacter/Icon/PANEL_BARBARIAN.png" id="6_jqfe6"]
+[ext_resource type="PackedScene" uid="uid://ckybul5b02da" path="res://env/SelectCharacter/Room/floor_tile_big_spikes.gltf" id="6_w62ih"]
+[ext_resource type="PackedScene" uid="uid://do3ir0avcha4s" path="res://env/SelectCharacter/Room/banner_shield_red.gltf" id="7_hkn2f"]
+[ext_resource type="PackedScene" uid="uid://b315owmu2f3fr" path="res://Assets/Scenes/rogue_hooded.tscn" id="7_nyemu"]
+[ext_resource type="Texture2D" uid="uid://bre6iii0fvum6" path="res://env/SelectCharacter/Icon/PANEL_KNIGHT.png" id="8_agakb"]
+[ext_resource type="PackedScene" uid="uid://x2nqv1iv2vl7" path="res://env/SelectCharacter/Room/wall/wall_corner.gltf" id="8_e40lw"]
+[ext_resource type="PackedScene" uid="uid://br08d0gygvsss" path="res://env/SelectCharacter/Room/stairs_walled.gltf" id="8_w62ih"]
+[ext_resource type="PackedScene" uid="uid://8xnig0rtfu27" path="res://env/SelectCharacter/Room/floor_dirt_small_A.gltf" id="9_2311q"]
+[ext_resource type="PackedScene" uid="uid://dy0xw55ltjqc1" path="res://env/SelectCharacter/Room/wall/wall.gltf" id="9_fqtya"]
+[ext_resource type="PackedScene" uid="uid://c2txbm41lm61n" path="res://env/SelectCharacter/Room/floor_tile_large_rocks.gltf" id="10_4pcom"]
+[ext_resource type="Texture2D" uid="uid://4w6vl0c7mqk8" path="res://env/SelectCharacter/Icon/PANEL_MAGE.png" id="10_ymn2y"]
+[ext_resource type="Texture2D" uid="uid://g7c8hbln8c75" path="res://env/SelectCharacter/Icon/SELECT_A_CHARACTER.png" id="11_cliai"]
+[ext_resource type="Texture2D" uid="uid://63xo8t6ru0xh" path="res://env/SelectCharacter/Icon/BACK.png" id="12_fv5so"]
+[ext_resource type="Texture2D" uid="uid://bgsr61kc2w4nx" path="res://env/SelectCharacter/Icon/PANEL_RANGER.png" id="12_os8rb"]
+[ext_resource type="PackedScene" uid="uid://bplsbi6ns27g3" path="res://env/SelectCharacter/Room/wall/wall_archedwindow_gated.gltf" id="12_u80bs"]
+[ext_resource type="Texture2D" uid="uid://chpuk534gdyi2" path="res://env/SelectCharacter/Icon/BACK_CLICK.png" id="13_7vpm2"]
+[ext_resource type="PackedScene" uid="uid://c7flus0r7ht3n" path="res://env/SelectCharacter/Room/wall/wall_cracked.gltf" id="13_h0enq"]
+[ext_resource type="Texture2D" uid="uid://cwg2135r0tmw7" path="res://env/SelectCharacter/Icon/BACK_HOVER.png" id="14_7bdqc"]
+[ext_resource type="Texture2D" uid="uid://c1tqug40576ta" path="res://env/SelectCharacter/Icon/PANEL_ROGUE.png" id="14_asua1"]
+[ext_resource type="PackedScene" uid="uid://dwm3vxnkx28s0" path="res://env/SelectCharacter/Room/table_long_decorated_A.gltf" id="15_gjh41"]
+[ext_resource type="Texture2D" uid="uid://bl8txnqpqddfv" path="res://env/SelectCharacter/Icon/PLAY.png" id="15_xqlda"]
+[ext_resource type="Texture2D" uid="uid://dn5tx73nkswku" path="res://env/SelectCharacter/Icon/PLAY_CLICK.png" id="16_6feai"]
+[ext_resource type="Texture2D" uid="uid://btijybv1bbevt" path="res://env/SelectCharacter/Icon/PANEL_ROGUE_HOODED.png" id="16_24j52"]
+[ext_resource type="PackedScene" uid="uid://cvcb0yl0y5hbb" path="res://env/SelectCharacter/Room/stool.gltf" id="16_e40lw"]
+[ext_resource type="Texture2D" uid="uid://danlxvta7hf6u" path="res://env/SelectCharacter/Icon/PLAY_HOVER.png" id="17_kepq8"]
+[ext_resource type="PackedScene" uid="uid://baluxna0wuyh5" path="res://env/SelectCharacter/Room/crates_stacked.gltf" id="19_igkmv"]
+[ext_resource type="PackedScene" uid="uid://urnu1axab6vk" path="res://env/SelectCharacter/Room/floor_dirt_small_C.gltf" id="32_qpphg"]
+[ext_resource type="PackedScene" uid="uid://bfuholeulim7w" path="res://env/SelectCharacter/Room/floor_wood_large_dark.gltf" id="34_fqtya"]
+[ext_resource type="PackedScene" uid="uid://dppo1u5uuip3e" path="res://env/SelectCharacter/Room/floor_tile_small_weeds_A.gltf" id="34_p13oh"]
+[ext_resource type="PackedScene" uid="uid://b05qful13wip0" path="res://env/SelectCharacter/Room/floor_dirt_small_corner.gltf" id="35_2311q"]
+[ext_resource type="PackedScene" uid="uid://cbcaaty00d55g" path="res://env/SelectCharacter/Room/floor_tile_small.gltf" id="35_hymgu"]
+[ext_resource type="PackedScene" uid="uid://c84slt7ps8uma" path="res://env/SelectCharacter/Room/floor_dirt_large_rocky.gltf" id="36_4pcom"]
+[ext_resource type="PackedScene" uid="uid://dfuanjk67s6qv" path="res://env/SelectCharacter/Room/floor_tile_small_decorated.gltf" id="36_bdbte"]
+[ext_resource type="PackedScene" uid="uid://csd1pu8cl4bqx" path="res://env/SelectCharacter/Room/floor_tile_small_weeds_B.gltf" id="37_d64fp"]
+[ext_resource type="PackedScene" uid="uid://bo7ehj01nbsea" path="res://env/SelectCharacter/Room/floor_dirt_small_weeds.gltf" id="39_qpphg"]
+[ext_resource type="PackedScene" uid="uid://bmhndnkj0acqt" path="res://env/SelectCharacter/Room/arch.gltf" id="41_poiyy"]
+[ext_resource type="PackedScene" uid="uid://ds5j8msrlh385" path="res://env/SelectCharacter/Room/wall/wall_doorway_scaffold.gltf" id="46_qnjvr"]
+[ext_resource type="PackedScene" uid="uid://bddtg536op477" path="res://env/SelectCharacter/Room/wall/wall_broken.gltf" id="47_kjjbb"]
+[ext_resource type="PackedScene" uid="uid://d0ixap1j0esxw" path="res://env/SelectCharacter/Room/wall/wall_gated.gltf" id="49_5cu2x"]
+[ext_resource type="PackedScene" uid="uid://cwwa5ckm1c77b" path="res://env/SelectCharacter/Room/pillar.gltf" id="50_d5256"]
+[ext_resource type="PackedScene" uid="uid://dnf8ca6453fwm" path="res://env/SelectCharacter/Room/wall/wall_arched.gltf" id="51_hkn2f"]
+[ext_resource type="PackedScene" uid="uid://dekfl7fcelorp" path="res://env/SelectCharacter/Room/floor_wood_large.gltf" id="52_4481t"]
+[ext_resource type="PackedScene" uid="uid://tpab4ahmiyaj" path="res://env/SelectCharacter/Room/floor_tile_small_broken_A.gltf" id="53_edhre"]
+[ext_resource type="PackedScene" uid="uid://b40r2caer2o0s" path="res://env/SelectCharacter/Room/torch_mounted_2.tscn" id="56_4481t"]
+[ext_resource type="PackedScene" uid="uid://yani3bf15mgr" path="res://env/SelectCharacter/Room/chest_gold.gltf" id="59_871yx"]
+[ext_resource type="PackedScene" uid="uid://3sm0irv2d8ml" path="res://env/SelectCharacter/Room/chest_gold_2.tscn" id="60_7fn4r"]
+[ext_resource type="PackedScene" uid="uid://dlslhkdrn1v63" path="res://env/SelectCharacter/Room/coin.gltf" id="63_7fn4r"]
+[ext_resource type="PackedScene" uid="uid://c8eej782jdx7f" path="res://env/SelectCharacter/Room/coin_stack_small.gltf" id="64_gjh41"]
+[ext_resource type="PackedScene" uid="uid://pp1w7ah5bgq4" path="res://env/SelectCharacter/Room/coin_stack_large.gltf" id="65_e40lw"]
+[ext_resource type="PackedScene" uid="uid://djoh5oibhgmge" path="res://env/SelectCharacter/Room/rubble_large.gltf" id="66_igkmv"]
+[ext_resource type="PackedScene" uid="uid://crj8dl85kqben" path="res://env/SelectCharacter/Room/barrel_large.gltf" id="66_se4fv"]
+[ext_resource type="PackedScene" uid="uid://bo7b1snf13003" path="res://env/SelectCharacter/Room/barrel_small.gltf" id="67_78bjb"]
+[ext_resource type="PackedScene" uid="uid://cm1k3jio8fw3t" path="res://env/SelectCharacter/Room/wall/wall_doorway.gltf" id="68_igkmv"]
+[ext_resource type="PackedScene" uid="uid://c17um4gmgv4kd" path="res://env/SelectCharacter/Room/keg.gltf" id="69_se4fv"]
+
+[sub_resource type="Environment" id="Environment_se4fv"]
+background_mode = 1
+background_color = Color(0.21960784, 0.19215687, 0.15686275, 1)
+ambient_light_source = 2
+ambient_light_energy = 0.5
+tonemap_mode = 3
+glow_enabled = true
+volumetric_fog_enabled = true
+volumetric_fog_density = 0.01
+volumetric_fog_albedo = Color(0.25531703, 0.28635138, 0.3673191, 1)
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_e40lw"]
+albedo_color = Color(0.5163938, 0.5163938, 0.5163937, 1)
+
+[sub_resource type="CapsuleShape3D" id="CapsuleShape3D_vjjst"]
+
+[node name="SelectCharacter" type="Node3D" unique_id=1580784542 groups=["UI_Manager"]]
+script = ExtResource("1_by3ij")
+
+[node name="WorldEnvironment" type="WorldEnvironment" parent="." unique_id=501293148]
+environment = SubResource("Environment_se4fv")
+
+[node name="DirectionalLight3D" type="DirectionalLight3D" parent="WorldEnvironment" unique_id=977705643]
+transform = Transform3D(-0.4634788, 0.37271845, 0.8039081, 0.87577957, 0.3307928, 0.3515485, -0.13489841, 0.8669815, -0.47973466, 0, 0, 0)
+visible = false
+light_color = Color(1, 0.9568973, 0.8348092, 1)
+light_energy = 2.0
+shadow_enabled = true
+
+[node name="OmniLight3D3" type="OmniLight3D" parent="WorldEnvironment" unique_id=1011643523]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 3.1, 2.65, -9.200002)
+light_color = Color(0.89554244, 0.5460804, 3.85046e-07, 1)
+light_energy = 3.0
+shadow_enabled = true
+shadow_opacity = 0.86
+omni_range = 8.0
+
+[node name="OmniLight3D9" type="OmniLight3D" parent="WorldEnvironment" unique_id=1167588871]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 3.5499997, 7.5, 10.799999)
+light_color = Color(0.99999994, 0.8668743, 0.72055537, 1)
+light_energy = 10.197
+light_volumetric_fog_energy = 0.0
+light_specular = 0.0
+shadow_opacity = 0.86
+omni_range = 32.165
+
+[node name="OmniLight3D10" type="SpotLight3D" parent="WorldEnvironment" unique_id=1633294622]
+transform = Transform3D(1, 0, 0, 0, -4.371139e-08, 1, 0, -1, -4.371139e-08, 3.3499997, 7.5, -1.900001)
+light_color = Color(0.99999994, 0.8668743, 0.72055537, 1)
+light_energy = 3.565
+light_specular = 0.0
+shadow_opacity = 0.86
+spot_range = 59.038
+spot_angle = 84.147644
+
+[node name="OmniLight3D7" type="OmniLight3D" parent="WorldEnvironment" unique_id=383182931]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -3.1000004, 2.65, -9.250001)
+light_color = Color(0.89554244, 0.5460804, 3.85046e-07, 1)
+light_energy = 3.0
+shadow_enabled = true
+shadow_opacity = 0.86
+omni_range = 8.0
+
+[node name="OmniLight3D11" type="OmniLight3D" parent="WorldEnvironment" unique_id=169536319]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -10.650001, 6.4500003, -12.900001)
+light_color = Color(0.89554244, 0.5460804, 3.85046e-07, 1)
+light_energy = 4.0
+shadow_enabled = true
+shadow_opacity = 0.86
+omni_range = 8.0
+
+[node name="OmniLight3D14" type="OmniLight3D" parent="WorldEnvironment" unique_id=1833753383]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 6.9999995, 6.4500003, -12.500001)
+light_color = Color(0.89554244, 0.5460804, 3.85046e-07, 1)
+light_energy = 4.0
+shadow_enabled = true
+shadow_opacity = 0.86
+omni_range = 8.0
+
+[node name="OmniLight3D15" type="OmniLight3D" parent="WorldEnvironment" unique_id=561258938]
+transform = Transform3D(-4.371139e-08, 0, -1, 0, 1, 0, 1, 0, -4.371139e-08, 12.349999, 6.4500003, -8.1100025)
+light_color = Color(0.89554244, 0.5460804, 3.85046e-07, 1)
+light_energy = 4.0
+shadow_enabled = true
+shadow_opacity = 0.86
+omni_range = 8.0
+
+[node name="OmniLight3D13" type="OmniLight3D" parent="WorldEnvironment" unique_id=1864670651]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -10.650001, 6.4500003, -12.900001)
+light_color = Color(0.89554244, 0.5460804, 3.85046e-07, 1)
+light_energy = 4.0
+shadow_enabled = true
+shadow_opacity = 0.86
+omni_range = 8.0
+
+[node name="OmniLight3D12" type="OmniLight3D" parent="WorldEnvironment" unique_id=53737704]
+transform = Transform3D(-4.371139e-08, 0, 1, 0, 1, 0, -1, 0, -4.371139e-08, -12.615001, 6.0000005, -3.6749997)
+light_color = Color(0.89554244, 0.5460804, 3.85046e-07, 1)
+light_energy = 4.0
+shadow_enabled = true
+shadow_opacity = 0.86
+omni_range = 8.0
+
+[node name="OmniLight3D8" type="OmniLight3D" parent="WorldEnvironment" unique_id=1437003359]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -8, 2.65, -9.600001)
+light_color = Color(0.89554244, 0.5460804, 3.85046e-07, 1)
+light_energy = 3.0
+shadow_enabled = true
+shadow_opacity = 0.86
+omni_range = 8.0
+
+[node name="OmniLight3D4" type="OmniLight3D" parent="WorldEnvironment" unique_id=550038672]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 8.3, 2.65, -9.6)
+light_color = Color(0.89554244, 0.5460804, 3.85046e-07, 1)
+light_energy = 3.0
+shadow_enabled = true
+shadow_opacity = 0.86
+omni_range = 8.0
+
+[node name="OmniLight3D5" type="OmniLight3D" parent="WorldEnvironment" unique_id=2007245601]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 8.55, 2.65, -1.8000007)
+light_color = Color(0.89554244, 0.5460804, 3.85046e-07, 1)
+light_energy = 3.0
+shadow_enabled = true
+shadow_opacity = 0.86
+omni_range = 8.0
+
+[node name="OmniLight3D6" type="OmniLight3D" parent="WorldEnvironment" unique_id=1695616571]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -7.9, 2.65, -2.4500005)
+light_color = Color(0.89554244, 0.5460804, 3.85046e-07, 1)
+light_energy = 3.0
+shadow_enabled = true
+shadow_opacity = 0.86
+omni_range = 8.0
+
+[node name="SpotLight3D" type="SpotLight3D" parent="WorldEnvironment" unique_id=1577992023]
+transform = Transform3D(-0.028528154, -0.7447884, 0.66669065, -0.24731904, 0.6514845, 0.7172179, -0.9685142, -0.14442438, -0.20278601, 11.35, 3.45, -9.049999)
+light_energy = 100.0
+light_indirect_energy = 16.0
+light_volumetric_fog_energy = 10.557
+light_bake_mode = 0
+shadow_enabled = true
+spot_range = 6.812
+spot_angle = 25.26
+spot_angle_attenuation = 0.25000018
+
+[node name="SpotLight3D2" type="SpotLight3D" parent="WorldEnvironment" unique_id=1494955891]
+transform = Transform3D(-0.91986275, -0.39044714, 0.03746518, -0.24731903, 0.6514845, 0.7172178, -0.3044436, 0.65047604, -0.69584125, 0.15, 5.9, -21.400003)
+light_energy = 100.0
+light_volumetric_fog_energy = 11.735
+light_specular = 0.0
+light_bake_mode = 0
+shadow_enabled = true
+distance_fade_enabled = true
+spot_range = 11.85
+spot_angle = 37.926186
+spot_angle_attenuation = 0.25000018
+
+[node name="torch_mounted2" parent="WorldEnvironment" unique_id=1373432727 instance=ExtResource("56_4481t")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -3.09, 1.9, -10.06)
+
+[node name="torch_mounted8" parent="WorldEnvironment" unique_id=2052899631 instance=ExtResource("56_4481t")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -10.639999, 5.85, -14.110001)
+
+[node name="torch_mounted10" parent="WorldEnvironment" unique_id=1418298110 instance=ExtResource("56_4481t")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 7.0100007, 5.85, -13.710001)
+
+[node name="torch_mounted11" parent="WorldEnvironment" unique_id=1505582289 instance=ExtResource("56_4481t")]
+transform = Transform3D(-4.371139e-08, 0, -1, 0, 1, 0, 1, 0, -4.371139e-08, 13.559999, 5.85, -8.100001)
+
+[node name="torch_mounted9" parent="WorldEnvironment" unique_id=2082731029 instance=ExtResource("56_4481t")]
+transform = Transform3D(-4.371139e-08, 0, 1, 0, 1, 0, -1, 0, -4.371139e-08, -13.475, 5.4, -3.685001)
+
+[node name="torch_mounted4" parent="WorldEnvironment" unique_id=809729400 instance=ExtResource("56_4481t")]
+transform = Transform3D(0.70710677, 0, 0.70710677, 0, 1, 0, -0.70710677, 0, 0.70710677, -8.44, 1.9, -10.06)
+
+[node name="torch_mounted5" parent="WorldEnvironment" unique_id=1074605497 instance=ExtResource("56_4481t")]
+transform = Transform3D(0.7071067, 0, -0.7071067, 0, 1, 0, 0.7071067, 0, 0.7071067, 8.760001, 1.9, -10.06)
+
+[node name="torch_mounted6" parent="WorldEnvironment" unique_id=1798714034 instance=ExtResource("56_4481t")]
+transform = Transform3D(-4.3711385e-08, 0, -0.9999999, 0, 1, 0, 0.9999999, 0, -4.3711385e-08, 9.310001, 1.9, -1.7600007)
+
+[node name="torch_mounted7" parent="WorldEnvironment" unique_id=776908708 instance=ExtResource("56_4481t")]
+transform = Transform3D(-4.3711385e-08, 0, 0.9999999, 0, 1, 0, -0.9999999, 0, -4.3711385e-08, -8.539999, 1.9, -2.4600008)
+
+[node name="torch_mounted3" parent="WorldEnvironment" unique_id=1518699649 instance=ExtResource("56_4481t")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 3.09, 1.9, -10.063)
+
+[node name="Room" type="Node3D" parent="." unique_id=147913127]
+
+[node name="Wall" type="Node3D" parent="Room" unique_id=1872876517]
+
+[node name="arch2" parent="Room/Wall" unique_id=1439994878 instance=ExtResource("41_poiyy")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, -10.55)
+
+[node name="wall_shelves2" parent="Room/Wall" unique_id=1105692872 instance=ExtResource("3_e3ibo")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 7.5, 0, -10.849999)
+
+[node name="wall2" parent="Room/Wall" unique_id=1446420980 instance=ExtResource("9_fqtya")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -3.5, 0, -10.849999)
+
+[node name="wall3" parent="Room/Wall" unique_id=37384342 instance=ExtResource("9_fqtya")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 3.5, 0, -10.849999)
+
+[node name="stairs_walled2" parent="Room/Wall" unique_id=874886677 instance=ExtResource("8_w62ih")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, -18.400002)
+
+[node name="stairs_walled3" parent="Room/Wall" unique_id=2014499628 instance=ExtResource("8_w62ih")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 3.5, -21.9)
+
+[node name="wall4" parent="Room/Wall" unique_id=743331890 instance=ExtResource("9_fqtya")]
+transform = Transform3D(-4.371139e-08, 0, 1, 0, 1, 0, -1, 0, -4.371139e-08, 2, 3.7, -16.4)
+
+[node name="wall5" parent="Room/Wall" unique_id=2049404134 instance=ExtResource("9_fqtya")]
+transform = Transform3D(-4.371139e-08, 0, 1, 0, 1, 0, -1, 0, -4.371139e-08, 2, 3.7, -12.5)
+
+[node name="wall8" parent="Room/Wall" unique_id=461749244 instance=ExtResource("9_fqtya")]
+transform = Transform3D(1.3, 0, 0, 0, 1, 0, 0, 0, 1, 9.800001, 3.7, -14.4)
+
+[node name="wall13" parent="Room/Wall" unique_id=25055261 instance=ExtResource("9_fqtya")]
+transform = Transform3D(1.3, 0, 0, 0, 1, 0, 0, 0, 1, -9.749998, 3.7, -14.4)
+
+[node name="wall12" parent="Room/Wall" unique_id=1576008891 instance=ExtResource("9_fqtya")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -4.499999, 3.7, -14.4)
+
+[node name="wall9" parent="Room/Wall" unique_id=1659522799 instance=ExtResource("9_fqtya")]
+transform = Transform3D(-4.371139e-08, 0, 1, 0, 1, 0, -1, 0, -4.371139e-08, 13.800001, 3.7, -10.4)
+
+[node name="wall10" parent="Room/Wall" unique_id=2138722229 instance=ExtResource("9_fqtya")]
+transform = Transform3D(-4.371139e-08, 0, 1, 0, 1, 0, -1, 0, -4.371139e-08, 13.800001, 3.7, -6.45)
+
+[node name="wall_arched2" parent="Room/Wall" unique_id=1687112451 instance=ExtResource("51_hkn2f")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -11.6, 0, -10.75)
+
+[node name="wall11" parent="Room/Wall" unique_id=2002122276 instance=ExtResource("9_fqtya")]
+transform = Transform3D(-4.371139e-08, 0, 1, 0, 1, 0, -1, 0, -4.371139e-08, 13.800001, 3.7, -2.4499998)
+
+[node name="wall15" parent="Room/Wall" unique_id=924245943 instance=ExtResource("9_fqtya")]
+transform = Transform3D(-4.371139e-08, 0, 1, 0, 1, 0, -1, 0, -4.371139e-08, -13.7, 3.7, -10.4)
+
+[node name="wall16" parent="Room/Wall" unique_id=1221446582 instance=ExtResource("9_fqtya")]
+transform = Transform3D(-4.371139e-08, 0, 1, 0, 1, 0, -1, 0, -4.371139e-08, -13.7, 3.7, -6.45)
+
+[node name="wall17" parent="Room/Wall" unique_id=2113743871 instance=ExtResource("9_fqtya")]
+transform = Transform3D(-4.371139e-08, 0, 1, 0, 1, 0, -1, 0, -4.371139e-08, -13.7, 3.7, -2.4499998)
+
+[node name="wall14" parent="Room/Wall" unique_id=738450538 instance=ExtResource("9_fqtya")]
+transform = Transform3D(-4.371139e-08, 0, 1, 0, 1, 0, -1, 0, -4.371139e-08, 13.800001, 3.7, 1.5000002)
+
+[node name="wall18" parent="Room/Wall" unique_id=2120585809 instance=ExtResource("9_fqtya")]
+transform = Transform3D(-4.371139e-08, 0, 1, 0, 1, 0, -1, 0, -4.371139e-08, -13.699999, 3.7, 1.5000002)
+
+[node name="wall_doorway_scaffold2" parent="Room/Wall" unique_id=1380165078 instance=ExtResource("46_qnjvr")]
+transform = Transform3D(-4.371139e-08, 0, 1, 0, 1, 0, -1, 0, -4.371139e-08, 9.55, 0, -4.45)
+
+[node name="wall_cracked4" parent="Room/Wall" unique_id=1136561400 instance=ExtResource("13_h0enq")]
+transform = Transform3D(-4.371139e-08, 0, 1, 0, 1, 0, -1, 0, -4.371139e-08, 9.55, 0, -0.5)
+
+[node name="wall_broken2" parent="Room/Wall" unique_id=861493456 instance=ExtResource("47_kjjbb")]
+transform = Transform3D(-4.371139e-08, 0, 1, 0, 1, 0, -1, 0, -4.371139e-08, -9.25, 0, -8.5)
+
+[node name="wall_gated2" parent="Room/Wall" unique_id=1685037354 instance=ExtResource("49_5cu2x")]
+transform = Transform3D(-4.371139e-08, 0, 1, 0, 1, 0, -1, 0, -4.371139e-08, -9.25, 0, -0.5)
+
+[node name="wall_shelves3" parent="Room/Wall" unique_id=872516727 instance=ExtResource("3_e3ibo")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -11.75, 0, -2.55)
+
+[node name="wall_doorway_scaffold3" parent="Room/Wall" unique_id=546880913 instance=ExtResource("46_qnjvr")]
+transform = Transform3D(-4.371139e-08, 0, 1, 0, 1, 0, -1, 0, -4.371139e-08, -13.85, 0, -0.3)
+
+[node name="pillar2" parent="Room/Wall" unique_id=1443078808 instance=ExtResource("50_d5256")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -3.1000001, 0, -10.6)
+
+[node name="pillar7" parent="Room/Wall" unique_id=1901436838 instance=ExtResource("50_d5256")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 7, 3.7, -14.25)
+
+[node name="pillar8" parent="Room/Wall" unique_id=1083284027 instance=ExtResource("50_d5256")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -7.0000005, 3.7, -14.25)
+
+[node name="pillar3" parent="Room/Wall" unique_id=676880861 instance=ExtResource("50_d5256")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 3.1, 0, -10.6)
+
+[node name="pillar4" parent="Room/Wall" unique_id=82287820 instance=ExtResource("50_d5256")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 9.2, 0, -10.35)
+
+[node name="pillar5" parent="Room/Wall" unique_id=281810057 instance=ExtResource("50_d5256")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -9.05, 0, -2.5000005)
+
+[node name="pillar6" parent="Room/Wall" unique_id=163257134 instance=ExtResource("50_d5256")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -8.85, 0, -10.350001)
+
+[node name="wall6" parent="Room/Wall" unique_id=241264535 instance=ExtResource("9_fqtya")]
+transform = Transform3D(-4.371139e-08, 0, 1, 0, 1, 0, -1, 0, -4.371139e-08, -2, 3.7, -12.5)
+
+[node name="wall7" parent="Room/Wall" unique_id=1045391624 instance=ExtResource("9_fqtya")]
+transform = Transform3D(-4.371139e-08, 0, 1, 0, 1, 0, -1, 0, -4.371139e-08, -2, 3.7, -16.5)
+
+[node name="wall_corner2" parent="Room/Wall" unique_id=867874843 instance=ExtResource("8_e40lw")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 13.8, 3.7, -14.400001)
+
+[node name="wall_arched3" parent="Room/Wall" unique_id=2059852389 instance=ExtResource("51_hkn2f")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.05, 3.7, -10.9)
+
+[node name="wall_doorway2" parent="Room/Wall" unique_id=2029494061 instance=ExtResource("68_igkmv")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 4.5, 3.7, -14.4)
+
+[node name="wall_corner3" parent="Room/Wall" unique_id=1574600589 instance=ExtResource("8_e40lw")]
+transform = Transform3D(-4.371139e-08, 0, 1, 0, 1, 0, -1, 0, -4.371139e-08, -13.700001, 3.7, -14.400001)
+
+[node name="wall_archedwindow_gated2" parent="Room/Wall" unique_id=498231960 instance=ExtResource("12_u80bs")]
+transform = Transform3D(-4.371139e-08, 0, 1, 0, 1, 0, -1, 0, -4.371139e-08, 9.549999, 0, -8.450001)
+
+[node name="wall_cracked2" parent="Room/Wall" unique_id=720723814 instance=ExtResource("13_h0enq")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -7.1, 0, -10.85)
+
+[node name="wall_cracked3" parent="Room/Wall" unique_id=1899589206 instance=ExtResource("13_h0enq")]
+transform = Transform3D(1.1924881e-08, 0, -1, 0, 1, 0, 1, 0, 1.1924881e-08, -9.25, 0, -4.7000003)
+
+[node name="Floor" type="Node3D" parent="Room" unique_id=620067965]
+
+[node name="floor_dirt_small_B2" parent="Room/Floor" unique_id=679297872 instance=ExtResource("2_b6ye1")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -3.8500001, 0, -3.45)
+
+[node name="floor_dirt_small_B3" parent="Room/Floor" unique_id=1727234124 instance=ExtResource("2_b6ye1")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -3.8500001, 0, -1.4500003)
+
+[node name="floor_wood_small2" parent="Room/Floor" unique_id=224212497 instance=ExtResource("3_y6q5d")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -1.85, 0, -5.45)
+
+[node name="floor_wood_small3" parent="Room/Floor" unique_id=1521408699 instance=ExtResource("3_y6q5d")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -1.85, 0, -3.45)
+
+[node name="floor_dirt_small_C2" parent="Room/Floor" unique_id=166790144 instance=ExtResource("32_qpphg")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 4.15, 0, -3.45)
+
+[node name="floor_tile_small_weeds_A2" parent="Room/Floor" unique_id=947660893 instance=ExtResource("34_p13oh")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -1.85, 0, -7.4500003)
+
+[node name="floor_dirt_small_C3" parent="Room/Floor" unique_id=1243985431 instance=ExtResource("32_qpphg")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 2.15, 0, -1.4500003)
+
+[node name="floor_tile_small_weeds_B2" parent="Room/Floor" unique_id=1788008227 instance=ExtResource("37_d64fp")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 4.15, 0, -1.4500003)
+
+[node name="floor_wood_large_dark2" parent="Room/Floor" unique_id=2051509935 instance=ExtResource("34_fqtya")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -6.85, 0, -0.45000002)
+
+[node name="floor_wood_large_dark4" parent="Room/Floor" unique_id=837680607 instance=ExtResource("34_fqtya")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 7.1500006, 0, -0.45000002)
+
+[node name="floor_wood_large_dark8" parent="Room/Floor" unique_id=762578244 instance=ExtResource("34_fqtya")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 7.1500006, 0, 3.55)
+
+[node name="floor_wood_large_dark5" parent="Room/Floor" unique_id=1142733714 instance=ExtResource("34_fqtya")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 7.1500006, 0, -4.45)
+
+[node name="floor_wood_large_dark3" parent="Room/Floor" unique_id=433437057 instance=ExtResource("34_fqtya")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -6.85, 0, -4.45)
+
+[node name="floor_dirt_small_corner2" parent="Room/Floor" unique_id=1845244164 instance=ExtResource("35_2311q")]
+transform = Transform3D(-4.371139e-08, 0, 1, 0, 1, 0, -1, 0, -4.371139e-08, 0.15, 0, -1.45)
+
+[node name="floor_dirt_small_corner3" parent="Room/Floor" unique_id=291586114 instance=ExtResource("35_2311q")]
+transform = Transform3D(-4.371139e-08, 0, 1, 0, 1, 0, -1, 0, -4.371139e-08, -3.8500001, 0, -5.4500003)
+
+[node name="floor_dirt_small_corner4" parent="Room/Floor" unique_id=300192253 instance=ExtResource("35_2311q")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 4.15, 0, -5.4500003)
+
+[node name="floor_dirt_large_rocky2" parent="Room/Floor" unique_id=983548561 instance=ExtResource("36_4pcom")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -6.85, 0, -8.45)
+
+[node name="floor_tile_small_broken_B3" parent="Room/Floor" unique_id=497246551 instance=ExtResource("5_suqyk")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.15, 0, -7.450001)
+
+[node name="floor_tile_small_broken_B4" parent="Room/Floor" unique_id=1810067499 instance=ExtResource("5_suqyk")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -1.85, 0, -1.4500008)
+
+[node name="floor_dirt_small_A2" parent="Room/Floor" unique_id=874702357 instance=ExtResource("9_2311q")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 2.15, 0, -7.4500003)
+
+[node name="floor_dirt_small_weeds2" parent="Room/Floor" unique_id=1372790046 instance=ExtResource("39_qpphg")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -3.8500001, 0, -9.45)
+
+[node name="floor_dirt_small_C4" parent="Room/Floor" unique_id=919743392 instance=ExtResource("32_qpphg")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -1.85, 0, -9.45)
+
+[node name="floor_dirt_small_corner5" parent="Room/Floor" unique_id=2042956805 instance=ExtResource("35_2311q")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 2.15, 0, -9.45)
+
+[node name="floor_tile_small2" parent="Room/Floor" unique_id=972920841 instance=ExtResource("35_hymgu")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 4.15, 0, -9.45)
+
+[node name="floor_tile_small_decorated3" parent="Room/Floor" unique_id=1646527835 instance=ExtResource("36_bdbte")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 6.15, 0, -7.4500003)
+
+[node name="floor_dirt_small_C5" parent="Room/Floor" unique_id=1578663516 instance=ExtResource("32_qpphg")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 8.150001, 0, -7.4500003)
+
+[node name="floor_dirt_small_corner6" parent="Room/Floor" unique_id=1924589680 instance=ExtResource("35_2311q")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 8.150001, 0, -9.45)
+
+[node name="floor_dirt_small_weeds3" parent="Room/Floor" unique_id=447377249 instance=ExtResource("39_qpphg")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 6.15, 0, -9.45)
+
+[node name="floor_tile_small3" parent="Room/Floor" unique_id=1767903511 instance=ExtResource("35_hymgu")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.15, 0, -11.45)
+
+[node name="floor_tile_small10" parent="Room/Floor" unique_id=1735544868 instance=ExtResource("35_hymgu")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.15, 0, -13.45)
+
+[node name="floor_tile_small4" parent="Room/Floor" unique_id=681918248 instance=ExtResource("35_hymgu")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 2.15, 0, -11.45)
+
+[node name="floor_tile_small11" parent="Room/Floor" unique_id=19049223 instance=ExtResource("35_hymgu")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 2.15, 0, -13.45)
+
+[node name="floor_tile_small5" parent="Room/Floor" unique_id=1382674332 instance=ExtResource("35_hymgu")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -1.8499999, 0, -11.45)
+
+[node name="floor_tile_small9" parent="Room/Floor" unique_id=527393163 instance=ExtResource("35_hymgu")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -1.8499999, 0, -13.45)
+
+[node name="floor_wood_small4" parent="Room/Floor" unique_id=974621248 instance=ExtResource("3_y6q5d")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.15, 0, -5.4500003)
+
+[node name="floor_wood_small5" parent="Room/Floor" unique_id=1416540462 instance=ExtResource("3_y6q5d")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.15, 0, -3.45)
+
+[node name="floor_wood_small6" parent="Room/Floor" unique_id=1780050929 instance=ExtResource("3_y6q5d")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 2.15, 0, -5.4500003)
+
+[node name="floor_wood_small7" parent="Room/Floor" unique_id=699306193 instance=ExtResource("3_y6q5d")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 2.15, 0, -3.45)
+
+[node name="floor_tile_big_grate2" parent="Room/Floor" unique_id=1611001435 instance=ExtResource("4_1kr0m")]
+transform = Transform3D(0.5, 0, 0, 0, 1, 0, 0, 0, 0.5, -3.85, 0, 0.54999995)
+
+[node name="floor_tile_big_grate4" parent="Room/Floor" unique_id=2021790681 instance=ExtResource("4_1kr0m")]
+transform = Transform3D(0.5, 0, 0, 0, 1, 0, 0, 0, 0.5, -3.85, 0, -7.45)
+
+[node name="floor_tile_big_grate3" parent="Room/Floor" unique_id=947721956 instance=ExtResource("4_1kr0m")]
+transform = Transform3D(0.5, 0, 0, 0, 1, 0, 0, 0, 0.5, 4.15, 0, 0.54999995)
+
+[node name="floor_tile_big_grate5" parent="Room/Floor" unique_id=1187268858 instance=ExtResource("4_1kr0m")]
+transform = Transform3D(0.5, 0, 0, 0, 1, 0, 0, 0, 0.5, 4.15, 0, -7.45)
+
+[node name="floor_tile_big_spikes2" parent="Room/Floor" unique_id=1512367564 instance=ExtResource("6_w62ih")]
+transform = Transform3D(0.5, 0, 0, 0, 0.3, 0, 0, 0, 0.5, -1.85, 0, 2.5499997)
+
+[node name="plaque2" parent="Room/Floor" unique_id=373452803 instance=ExtResource("1_pr3o2")]
+transform = Transform3D(0.70710677, 0, 0.70710677, 0, 1, 0, -0.70710677, 0, 0.70710677, -6.6, 0.05, -2.1)
+
+[node name="plaque3" parent="Room/Floor" unique_id=319860872 instance=ExtResource("1_pr3o2")]
+transform = Transform3D(0.8660254, 0, 0.5, 0, 1, 0, -0.5, 0, 0.8660254, -4.2999997, 0.05, -3.9)
+
+[node name="plaque4" parent="Room/Floor" unique_id=2074162354 instance=ExtResource("1_pr3o2")]
+transform = Transform3D(0.9659258, 0, 0.25881904, 0, 1, 0, -0.25881904, 0, 0.9659258, -1.6, 0.05, -5)
+
+[node name="plaque5" parent="Room/Floor" unique_id=1753915765 instance=ExtResource("1_pr3o2")]
+transform = Transform3D(0.9659258, 0, -0.25881904, 0, 1, 0, 0.25881904, 0, 0.9659258, 1.6, 0.05, -5)
+
+[node name="plaque6" parent="Room/Floor" unique_id=1434834306 instance=ExtResource("1_pr3o2")]
+transform = Transform3D(0.8660253, 0, -0.49999997, 0, 1, 0, 0.49999997, 0, 0.8660253, 4.3, 0.05, -3.9)
+
+[node name="plaque7" parent="Room/Floor" unique_id=1360129613 instance=ExtResource("1_pr3o2")]
+transform = Transform3D(0.70710677, 0, -0.70710677, 0, 1, 0, 0.70710677, 0, 0.70710677, 6.6, 0.05, -2.1)
+
+[node name="floor_dirt_small_B4" parent="Room/Floor" unique_id=1460937764 instance=ExtResource("2_b6ye1")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.15, 0, 0.55)
+
+[node name="floor_tile_large_rocks2" parent="Room/Floor" unique_id=1171854495 instance=ExtResource("10_4pcom")]
+transform = Transform3D(0.5, 0, 0, 0, 1, 0, 0, 0, 0.5, 2.1499999, 0, 0.5500001)
+
+[node name="floor_wood_large_dark6" parent="Room/Floor" unique_id=560170 instance=ExtResource("34_fqtya")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -11.650001, 0, -0.35)
+
+[node name="floor_tile_big_spikes3" parent="Room/Floor" unique_id=95443818 instance=ExtResource("6_w62ih")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -11.650001, 0, -9.05)
+
+[node name="floor_wood_large2" parent="Room/Floor" unique_id=1575826802 instance=ExtResource("52_4481t")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -11.7, 4, -8.4)
+
+[node name="floor_wood_large5" parent="Room/Floor" unique_id=36042653 instance=ExtResource("52_4481t")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -11.7, 4, -12.4)
+
+[node name="floor_wood_large6" parent="Room/Floor" unique_id=1938371059 instance=ExtResource("52_4481t")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -7.7, 4, -12.4)
+
+[node name="floor_wood_large7" parent="Room/Floor" unique_id=1104936744 instance=ExtResource("52_4481t")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -3.6999998, 4, -12.4)
+
+[node name="floor_wood_large9" parent="Room/Floor" unique_id=1762917601 instance=ExtResource("52_4481t")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 4.3, 4, -12.4)
+
+[node name="floor_wood_large10" parent="Room/Floor" unique_id=639359879 instance=ExtResource("52_4481t")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 8.3, 4, -12.4)
+
+[node name="floor_wood_large11" parent="Room/Floor" unique_id=828355649 instance=ExtResource("52_4481t")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 11.95, 4, -12.4)
+
+[node name="floor_wood_large12" parent="Room/Floor" unique_id=1143572339 instance=ExtResource("52_4481t")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 11.95, 4, -8.4)
+
+[node name="floor_wood_large13" parent="Room/Floor" unique_id=51257946 instance=ExtResource("52_4481t")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 11.95, 4, -4.3999996)
+
+[node name="floor_wood_large14" parent="Room/Floor" unique_id=556643724 instance=ExtResource("52_4481t")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 11.95, 4, -0.39999962)
+
+[node name="floor_wood_large3" parent="Room/Floor" unique_id=495294689 instance=ExtResource("52_4481t")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -11.7, 4, -4.45)
+
+[node name="floor_wood_large4" parent="Room/Floor" unique_id=852939913 instance=ExtResource("52_4481t")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -11.7, 4, -0.5)
+
+[node name="floor_wood_large_dark7" parent="Room/Floor" unique_id=1168516932 instance=ExtResource("34_fqtya")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -6.8500004, 0, 3.55)
+
+[node name="floor_tile_small6" parent="Room/Floor" unique_id=1709153596 instance=ExtResource("35_hymgu")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -3.8500001, 0, 2.55)
+
+[node name="floor_tile_small7" parent="Room/Floor" unique_id=1629711818 instance=ExtResource("35_hymgu")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -1.85, 0, 0.54999995)
+
+[node name="floor_tile_small8" parent="Room/Floor" unique_id=1307372425 instance=ExtResource("35_hymgu")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.15, 0, 2.55)
+
+[node name="floor_tile_small_broken_A2" parent="Room/Floor" unique_id=1776047862 instance=ExtResource("53_edhre")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 2.15, 0, 2.55)
+
+[node name="floor_dirt_small_corner7" parent="Room/Floor" unique_id=331023264 instance=ExtResource("35_2311q")]
+transform = Transform3D(-4.371139e-08, 0, 1, 0, 1, 0, -1, 0, -4.371139e-08, 4.15, 0, 2.55)
+
+[node name="floor_tile_large_rocks3" parent="Room/Floor" unique_id=1340385814 instance=ExtResource("10_4pcom")]
+transform = Transform3D(0.5, 0, 0, 0, 1, 0, 0, 0, 0.5, 0.14999974, 0, -9.45)
+
+[node name="Decoration" type="Node3D" parent="Room" unique_id=51184158]
+
+[node name="chest_gold3" parent="Room/Decoration" unique_id=965619032 instance=ExtResource("60_7fn4r")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -3.230156, 0, -9.130083)
+
+[node name="banner_shield_green2" parent="Room/Decoration" unique_id=1884312882 instance=ExtResource("6_d5256")]
+transform = Transform3D(0.7, 0, 0, 0, 0.7, 0, 0, 0, 0.7, 4.75, 0.6, -10.75)
+
+[node name="banner_shield_red2" parent="Room/Decoration" unique_id=504818157 instance=ExtResource("7_hkn2f")]
+transform = Transform3D(0.7, 0, 0, 0, 0.7, 0, 0, 0, 0.7, -4.75, 0.6, -10.75)
+
+[node name="chest_gold4" parent="Room/Decoration" unique_id=272437927 instance=ExtResource("59_871yx")]
+transform = Transform3D(0.7, 0, 0, 0, 0.7, 0, 0, 0, 0.7, 7.5, 0, -9.8)
+
+[node name="coin2" parent="Room/Decoration" unique_id=1643900806 instance=ExtResource("63_7fn4r")]
+transform = Transform3D(1, 0, 0, 0, 0.9396926, -0.34202012, 0, 0.34202012, 0.9396926, -2.7, 0.1, -8.25)
+
+[node name="coin3" parent="Room/Decoration" unique_id=220177575 instance=ExtResource("63_7fn4r")]
+transform = Transform3D(1, 0, 0, 0, 0.93969274, 0.34202015, 0, -0.34202015, 0.93969274, -3, 0.1, -8.25)
+
+[node name="coin4" parent="Room/Decoration" unique_id=1836668897 instance=ExtResource("63_7fn4r")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -2.85, 0.1, -7.95)
+
+[node name="coin_stack_small2" parent="Room/Decoration" unique_id=2089203692 instance=ExtResource("64_gjh41")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 8.2, 0, -8)
+
+[node name="coin_stack_large2" parent="Room/Decoration" unique_id=1685236796 instance=ExtResource("65_e40lw")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -7.3, 0, 0.6)
+
+[node name="rubble_large2" parent="Room/Decoration" unique_id=774519623 instance=ExtResource("66_igkmv")]
+transform = Transform3D(0.9396926, 0, -0.34202012, 0, 1, 0, 0.34202012, 0, 0.9396926, -8.45, 0, 2.45)
+
+[node name="rubble_large3" parent="Room/Decoration" unique_id=1309011916 instance=ExtResource("66_igkmv")]
+transform = Transform3D(0.9396926, 0, -0.34202012, 0, 1, 0, 0.34202012, 0, 0.9396926, 8.85, 0, 3.3000002)
+
+[node name="barrel_large2" parent="Room/Decoration" unique_id=1817214160 instance=ExtResource("66_se4fv")]
+transform = Transform3D(0.44995135, 0, 0.5362311, 0, 0.7, 0, -0.5362311, 0, 0.44995135, -7.4500003, 0.65000004, -9.55)
+
+[node name="barrel_large3" parent="Room/Decoration" unique_id=1338511304 instance=ExtResource("66_se4fv")]
+transform = Transform3D(0.32139382, 0, 0.38302222, 0, 0.5, 0, -0.38302222, 0, 0.32139382, -12.150001, 4.1, -11.650001)
+
+[node name="barrel_small2" parent="Room/Decoration" unique_id=1866683159 instance=ExtResource("67_78bjb")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 4.9, 0, -9.95)
+
+[node name="barrel_small3" parent="Room/Decoration" unique_id=514881866 instance=ExtResource("67_78bjb")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 5.85, 0, -9.95)
+
+[node name="barrel_small4" parent="Room/Decoration" unique_id=725162081 instance=ExtResource("67_78bjb")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 5.35, 1, -10.15)
+
+[node name="chest_gold2" parent="Room/Decoration" unique_id=1969365514 instance=ExtResource("59_871yx")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -3.5, 4.05, -13.099999)
+
+[node name="keg2" parent="Room/Decoration" unique_id=709060622 instance=ExtResource("69_se4fv")]
+transform = Transform3D(0.7, 0, 0, 0, 0.7, 0, 0, 0, 0.7, -9.150001, 4.05, -13.4)
+
+[node name="chest_gold5" parent="Room/Decoration" unique_id=764737708 instance=ExtResource("59_871yx")]
+transform = Transform3D(0.8231364, 0, 0.56784374, 0, 1, 0, -0.56784374, 0, 0.8231364, -12.150001, 4.05, -13.25)
+
+[node name="coin_stack_small3" parent="Room/Decoration" unique_id=1934470998 instance=ExtResource("64_gjh41")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -10.75, 4.05, -13.200001)
+
+[node name="chest_gold6" parent="Room/Decoration" unique_id=1245912043 instance=ExtResource("59_871yx")]
+transform = Transform3D(-4.371139e-08, 0, 1, 0, 1, 0, -1, 0, -4.371139e-08, -12.8, 4.05, -10)
+
+[node name="table_long_decorated_A2" parent="Room/Decoration" unique_id=1204372384 instance=ExtResource("15_gjh41")]
+transform = Transform3D(-0.50000006, 0, 0.8660254, 0, 1, 0, -0.8660254, 0, -0.50000006, -6.7500005, 0, -8.55)
+
+[node name="stool2" parent="Room/Decoration" unique_id=2117076565 instance=ExtResource("16_e40lw")]
+transform = Transform3D(0.76604444, 0, 0.6427876, 0, 1, 0, -0.6427876, 0, 0.76604444, -6, 0, -7.3)
+
+[node name="barrel_small5" parent="Room/Decoration" unique_id=648732884 instance=ExtResource("67_78bjb")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -5.1000004, 4.05, -13.349999)
+
+[node name="wall_shelves4" parent="Room/Decoration" unique_id=1757609089 instance=ExtResource("3_e3ibo")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 9.05, 3.65, -14.5)
+
+[node name="chest_gold7" parent="Room/Decoration" unique_id=1469110423 instance=ExtResource("59_871yx")]
+transform = Transform3D(-3.4969112e-08, 0, -0.8, 0, 0.8, 0, 0.8, 0, -3.4969112e-08, 12.900001, 4.05, -11.45)
+
+[node name="crates_stacked2" parent="Room/Decoration" unique_id=1778417019 instance=ExtResource("19_igkmv")]
+transform = Transform3D(0.9848078, 0, -0.17364797, 0, 1, 0, 0.17364797, 0, 0.9848078, 12.700001, 4.05, -13.25)
+
+[node name="CSGBox3D" type="CSGBox3D" parent="Room" unique_id=1613677383]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 8.1, -11.05)
+material_override = SubResource("StandardMaterial3D_e40lw")
+size = Vector3(30, 1, 30)
+
+[node name="Camera3D" type="Camera3D" parent="." unique_id=1212829986]
+transform = Transform3D(1, 0, 0, 0, 0.95105654, 0.309017, 0, -0.309017, 0.95105654, 0, 7, 11.150001)
+keep_aspect = 0
+current = true
+fov = 63.4
+script = ExtResource("2_a6hu6")
+
+[node name="Character" type="Node3D" parent="." unique_id=1823413442]
+
+[node name="Barbarian" parent="Character" unique_id=326357023 instance=ExtResource("2_eniin")]
+transform = Transform3D(0.70710677, 0, 0.70710677, 0, 1, 0, -0.70710677, 0, 0.70710677, -6.6, 0.45, -2.1)
+
+[node name="Skeleton3D" parent="Character/Barbarian/Rig_Medium" index="0"]
+bones/1/position = Vector3(0, 0.3868798, 0)
+bones/1/rotation = Quaternion(0.0029842798, 0.04315755, 0.00012891818, 0.9990638)
+bones/2/rotation = Quaternion(0.008341951, 1.8415682e-09, 0.00072206056, 0.99996495)
+bones/3/rotation = Quaternion(-0.00238447, 2.2390851e-09, -0.00020639443, 0.99999714)
+bones/4/rotation = Quaternion(-0.537554, -0.107248284, -0.76598114, 0.33586672)
+bones/5/rotation = Quaternion(2.118186e-08, -6.1659996e-08, -0.37205127, 0.9282122)
+bones/7/rotation = Quaternion(-0.22084042, -0.34414056, 0.1804802, 0.8945523)
+bones/8/rotation = Quaternion(0.0016477791, 0.0016477973, -0.70103097, 0.71312714)
+bones/9/rotation = Quaternion(-0.016184768, -0.03133762, -0.0008909933, 0.9993775)
+bones/10/rotation = Quaternion(-0.5641741, 0.03740167, 0.73077285, 0.38246554)
+bones/11/rotation = Quaternion(-5.0222595e-09, 6.459571e-08, 0.38633925, 0.9223568)
+bones/13/rotation = Quaternion(-0.21121201, 0.38108012, -0.1344666, 0.8899923)
+bones/14/rotation = Quaternion(0.0016477865, -0.0016477898, 0.70103097, 0.71312714)
+bones/15/rotation = Quaternion(0.9903982, 0.057741635, 0.071113676, 0.10353881)
+bones/16/rotation = Quaternion(0.30961868, 6.6486e-08, -2.131027e-07, 0.9508608)
+bones/17/rotation = Quaternion(-0.55586076, -0.112951316, 0.046229936, 0.8222675)
+bones/18/rotation = Quaternion(-1.006321e-06, 0.9202346, -0.39136735, 2.7191118e-07)
+bones/19/rotation = Quaternion(0.9959144, -0.030562513, 0.031159883, 0.0790545)
+bones/20/rotation = Quaternion(0.32024357, -6.28126e-08, 2.2214849e-07, 0.94733524)
+bones/21/rotation = Quaternion(-0.58440614, 0.114148326, -0.012615648, 0.8032936)
+
+[node name="Area3D" type="Area3D" parent="Character/Barbarian" unique_id=194800397 node_paths=PackedStringArray("radice_personaggio", "anim_tree")]
+script = ExtResource("3_a6hu6")
+immagine_pannello = ExtResource("6_jqfe6")
+radice_personaggio = NodePath("../Rig_Medium/Skeleton3D")
+anim_tree = NodePath("../AnimationTree")
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="Character/Barbarian/Area3D" unique_id=90682935]
+transform = Transform3D(1, 0, 0, 0, 1.2636, 0, 0, 0, 1, 0, 0.95, 0)
+shape = SubResource("CapsuleShape3D_vjjst")
+
+[node name="CameraTarget" type="Marker3D" parent="Character/Barbarian/Area3D" unique_id=645586017]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.27677655, 1.3, 4.5767775)
+
+[node name="Knight" parent="Character" unique_id=328900417 instance=ExtResource("3_3g37g")]
+transform = Transform3D(0.8660254, 0, -0.5, 0, 1, 0, 0.5, 0, 0.8660254, 4.3, 0.45, -3.9)
+
+[node name="Skeleton3D" parent="Character/Knight/Rig_Medium" index="0"]
+bones/1/position = Vector3(0, 0.3868798, 0)
+bones/1/rotation = Quaternion(0.0029842798, 0.04315755, 0.00012891818, 0.9990638)
+bones/2/rotation = Quaternion(0.008341951, 1.8415682e-09, 0.00072206056, 0.99996495)
+bones/3/rotation = Quaternion(-0.00238447, 2.2390851e-09, -0.00020639443, 0.99999714)
+bones/4/rotation = Quaternion(-0.537554, -0.107248284, -0.76598114, 0.33586672)
+bones/5/rotation = Quaternion(2.118186e-08, -6.1659996e-08, -0.37205127, 0.9282122)
+bones/7/rotation = Quaternion(-0.22084042, -0.34414056, 0.1804802, 0.8945523)
+bones/8/rotation = Quaternion(0.0016477791, 0.0016477973, -0.70103097, 0.71312714)
+bones/9/rotation = Quaternion(-0.5641741, 0.03740167, 0.73077285, 0.38246554)
+bones/10/rotation = Quaternion(-5.0222595e-09, 6.459571e-08, 0.38633925, 0.9223568)
+bones/12/rotation = Quaternion(-0.21121201, 0.38108012, -0.1344666, 0.8899923)
+bones/13/rotation = Quaternion(0.0016477865, -0.0016477898, 0.70103097, 0.71312714)
+bones/14/rotation = Quaternion(-0.016184768, -0.03133762, -0.0008909933, 0.9993775)
+bones/15/rotation = Quaternion(0.9959144, -0.030562513, 0.031159883, 0.0790545)
+bones/16/rotation = Quaternion(0.32024357, -6.28126e-08, 2.2214849e-07, 0.94733524)
+bones/17/rotation = Quaternion(-0.58440614, 0.114148326, -0.012615648, 0.8032936)
+bones/19/rotation = Quaternion(0.9903982, 0.057741635, 0.071113676, 0.10353881)
+bones/20/rotation = Quaternion(0.30961868, 6.6486e-08, -2.131027e-07, 0.9508608)
+bones/21/rotation = Quaternion(-0.55586076, -0.112951316, 0.046229936, 0.8222675)
+bones/22/rotation = Quaternion(-1.006321e-06, 0.9202346, -0.39136735, 2.7191118e-07)
+
+[node name="Area3D" type="Area3D" parent="Character/Knight" unique_id=1809429447 node_paths=PackedStringArray("radice_personaggio", "anim_tree")]
+script = ExtResource("3_a6hu6")
+immagine_pannello = ExtResource("8_agakb")
+radice_personaggio = NodePath("../Rig_Medium/Skeleton3D")
+anim_tree = NodePath("../AnimationTree")
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="Character/Knight/Area3D" unique_id=386132358]
+transform = Transform3D(1, 0, 0, 0, 1.2636, 0, 0, 0, 1, 0, 0.95, 0)
+shape = SubResource("CapsuleShape3D_vjjst")
+
+[node name="CameraTarget" type="Marker3D" parent="Character/Knight/Area3D" unique_id=1151547797]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.31650615, 1.3, 4.2749996)
+
+[node name="Mage" parent="Character" unique_id=627831827 instance=ExtResource("4_a6hu6")]
+transform = Transform3D(0.9659258, 0, 0.25881904, 0, 1, 0, -0.25881904, 0, 0.9659258, -1.6, 0.45, -5)
+
+[node name="Skeleton3D" parent="Character/Mage/Rig_Medium" index="0"]
+bones/1/position = Vector3(0, 0.3868798, 0)
+bones/1/rotation = Quaternion(0.0029842798, 0.04315755, 0.00012891818, 0.9990638)
+bones/2/rotation = Quaternion(0.9959144, -0.030562513, 0.031159883, 0.0790545)
+bones/3/rotation = Quaternion(0.32024357, -6.28126e-08, 2.2214849e-07, 0.94733524)
+bones/4/rotation = Quaternion(-0.58440614, 0.114148326, -0.012615648, 0.8032936)
+bones/6/rotation = Quaternion(0.008341951, 1.8415682e-09, 0.00072206056, 0.99996495)
+bones/7/rotation = Quaternion(-0.00238447, 2.2390851e-09, -0.00020639443, 0.99999714)
+bones/8/rotation = Quaternion(-0.537554, -0.107248284, -0.76598114, 0.33586672)
+bones/9/rotation = Quaternion(2.118186e-08, -6.1659996e-08, -0.37205127, 0.9282122)
+bones/11/rotation = Quaternion(-0.22084042, -0.34414056, 0.1804802, 0.8945523)
+bones/12/rotation = Quaternion(0.0016477791, 0.0016477973, -0.70103097, 0.71312714)
+bones/13/rotation = Quaternion(-0.016184768, -0.03133762, -0.0008909933, 0.9993775)
+bones/14/rotation = Quaternion(-0.5641741, 0.03740167, 0.73077285, 0.38246554)
+bones/15/rotation = Quaternion(-5.0222595e-09, 6.459571e-08, 0.38633925, 0.9223568)
+bones/17/rotation = Quaternion(-0.21121201, 0.38108012, -0.1344666, 0.8899923)
+bones/18/rotation = Quaternion(0.0016477865, -0.0016477898, 0.70103097, 0.71312714)
+bones/19/rotation = Quaternion(0.9903982, 0.057741635, 0.071113676, 0.10353881)
+bones/20/rotation = Quaternion(0.30961868, 6.6486e-08, -2.131027e-07, 0.9508608)
+bones/21/rotation = Quaternion(-0.55586076, -0.112951316, 0.046229936, 0.8222675)
+bones/22/rotation = Quaternion(-1.006321e-06, 0.9202346, -0.39136735, 2.7191118e-07)
+
+[node name="Area3D" type="Area3D" parent="Character/Mage" unique_id=1811376238 node_paths=PackedStringArray("radice_personaggio", "anim_tree")]
+script = ExtResource("3_a6hu6")
+immagine_pannello = ExtResource("10_ymn2y")
+radice_personaggio = NodePath("../Rig_Medium/Skeleton3D")
+anim_tree = NodePath("../AnimationTree")
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="Character/Mage/Area3D" unique_id=712081052]
+transform = Transform3D(1.0000006, 0, 0, 0, 1.2636, 0, 0, 0, 1.0000006, 0, 0.95, 0)
+shape = SubResource("CapsuleShape3D_vjjst")
+
+[node name="CameraTarget" type="Marker3D" parent="Character/Mage/Area3D" unique_id=1988299424]
+transform = Transform3D(1.0000006, 0, 0, 0, 1, 0, 0, 0, 1.0000006, 0.34148175, 1.3, 4.464706)
+
+[node name="Ranger" parent="Character" unique_id=1845293189 instance=ExtResource("5_by3ij")]
+transform = Transform3D(0.9659258, 0, -0.25881904, 0, 1, 0, 0.25881904, 0, 0.9659258, 1.6, 0.45, -5)
+
+[node name="Skeleton3D" parent="Character/Ranger/Rig_Medium" index="0"]
+bones/1/position = Vector3(0, 0.3868798, 0)
+bones/1/rotation = Quaternion(0.0029842798, 0.04315755, 0.00012891818, 0.9990638)
+bones/2/rotation = Quaternion(0.9903982, 0.057741635, 0.071113676, 0.10353881)
+bones/3/rotation = Quaternion(0.30961868, 6.6486e-08, -2.131027e-07, 0.9508608)
+bones/4/rotation = Quaternion(-0.55586076, -0.112951316, 0.046229936, 0.8222675)
+bones/5/rotation = Quaternion(-1.006321e-06, 0.9202346, -0.39136735, 2.7191118e-07)
+bones/6/rotation = Quaternion(0.9959144, -0.030562513, 0.031159883, 0.0790545)
+bones/7/rotation = Quaternion(0.32024357, -6.28126e-08, 2.2214849e-07, 0.94733524)
+bones/8/rotation = Quaternion(-0.58440614, 0.114148326, -0.012615648, 0.8032936)
+bones/10/rotation = Quaternion(0.008341951, 1.8415682e-09, 0.00072206056, 0.99996495)
+bones/11/rotation = Quaternion(-0.00238447, 2.2390851e-09, -0.00020639443, 0.99999714)
+bones/12/rotation = Quaternion(-0.016184768, -0.03133762, -0.0008909933, 0.9993775)
+bones/13/rotation = Quaternion(-0.5641741, 0.03740167, 0.73077285, 0.38246554)
+bones/14/rotation = Quaternion(-5.0222595e-09, 6.459571e-08, 0.38633925, 0.9223568)
+bones/16/rotation = Quaternion(-0.21121201, 0.38108012, -0.1344666, 0.8899923)
+bones/17/rotation = Quaternion(0.0016477865, -0.0016477898, 0.70103097, 0.71312714)
+bones/18/rotation = Quaternion(-0.537554, -0.107248284, -0.76598114, 0.33586672)
+bones/19/rotation = Quaternion(2.118186e-08, -6.1659996e-08, -0.37205127, 0.9282122)
+bones/21/rotation = Quaternion(-0.22084042, -0.34414056, 0.1804802, 0.8945523)
+bones/22/rotation = Quaternion(0.0016477791, 0.0016477973, -0.70103097, 0.71312714)
+
+[node name="Area3D" type="Area3D" parent="Character/Ranger" unique_id=1195987537 node_paths=PackedStringArray("radice_personaggio", "anim_tree")]
+script = ExtResource("3_a6hu6")
+immagine_pannello = ExtResource("12_os8rb")
+radice_personaggio = NodePath("../Rig_Medium/Skeleton3D")
+anim_tree = NodePath("../AnimationTree")
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="Character/Ranger/Area3D" unique_id=1924985513]
+transform = Transform3D(1.0000006, 0, 0, 0, 1.2636, 0, 0, 0, 1.0000006, 0, 0.95, 0)
+shape = SubResource("CapsuleShape3D_vjjst")
+
+[node name="CameraTarget" type="Marker3D" parent="Character/Ranger/Area3D" unique_id=1717426632]
+transform = Transform3D(1.0000006, 0, 0, 0, 1, 0, 0, 0, 1.0000006, 0.34148133, 1.3, 4.335296)
+
+[node name="Rogue" parent="Character" unique_id=1786499254 instance=ExtResource("6_cliai")]
+transform = Transform3D(0.8660254, 0, 0.5, 0, 1, 0, -0.5, 0, 0.8660254, -4.3, 0.45, -3.9)
+
+[node name="Skeleton3D" parent="Character/Rogue/Rig_Medium" index="0"]
+bones/1/position = Vector3(0, 0.3868798, 0)
+bones/1/rotation = Quaternion(0.0029842798, 0.04315755, 0.00012891818, 0.9990638)
+bones/2/rotation = Quaternion(0.9903982, 0.057741635, 0.071113676, 0.10353881)
+bones/3/rotation = Quaternion(0.30961868, 6.6486e-08, -2.131027e-07, 0.9508608)
+bones/4/rotation = Quaternion(-0.55586076, -0.112951316, 0.046229936, 0.8222675)
+bones/5/rotation = Quaternion(-1.006321e-06, 0.9202346, -0.39136735, 2.7191118e-07)
+bones/6/rotation = Quaternion(0.9959144, -0.030562513, 0.031159883, 0.0790545)
+bones/7/rotation = Quaternion(0.32024357, -6.28126e-08, 2.2214849e-07, 0.94733524)
+bones/8/rotation = Quaternion(-0.58440614, 0.114148326, -0.012615648, 0.8032936)
+bones/10/rotation = Quaternion(0.008341951, 1.8415682e-09, 0.00072206056, 0.99996495)
+bones/11/rotation = Quaternion(-0.00238447, 2.2390851e-09, -0.00020639443, 0.99999714)
+bones/12/rotation = Quaternion(-0.5641741, 0.03740167, 0.73077285, 0.38246554)
+bones/13/rotation = Quaternion(-5.0222595e-09, 6.459571e-08, 0.38633925, 0.9223568)
+bones/15/rotation = Quaternion(-0.21121201, 0.38108012, -0.1344666, 0.8899923)
+bones/16/rotation = Quaternion(0.0016477865, -0.0016477898, 0.70103097, 0.71312714)
+bones/17/rotation = Quaternion(-0.016184768, -0.03133762, -0.0008909933, 0.9993775)
+bones/18/rotation = Quaternion(-0.537554, -0.107248284, -0.76598114, 0.33586672)
+bones/19/rotation = Quaternion(2.118186e-08, -6.1659996e-08, -0.37205127, 0.9282122)
+bones/21/rotation = Quaternion(-0.22084042, -0.34414056, 0.1804802, 0.8945523)
+bones/22/rotation = Quaternion(0.0016477791, 0.0016477973, -0.70103097, 0.71312714)
+
+[node name="Area3D" type="Area3D" parent="Character/Rogue" unique_id=402377775 node_paths=PackedStringArray("radice_personaggio", "anim_tree")]
+script = ExtResource("3_a6hu6")
+immagine_pannello = ExtResource("14_asua1")
+radice_personaggio = NodePath("../Rig_Medium/Skeleton3D")
+anim_tree = NodePath("../AnimationTree")
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="Character/Rogue/Area3D" unique_id=1740410252]
+transform = Transform3D(1, 0, 0, 0, 1.2636, 0, 0, 0, 1, 0, 0.95, 0)
+shape = SubResource("CapsuleShape3D_vjjst")
+
+[node name="CameraTarget" type="Marker3D" parent="Character/Rogue/Area3D" unique_id=536687013]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.31650627, 1.3, 4.5249996)
+
+[node name="Rogue_Hooded" parent="Character" unique_id=1742474264 instance=ExtResource("7_nyemu")]
+transform = Transform3D(0.70710677, 0, -0.70710677, 0, 1, 0, 0.70710677, 0, 0.70710677, 6.6, 0.45, -2.1)
+
+[node name="Skeleton3D" parent="Character/Rogue_Hooded/Rig_Medium" index="0"]
+bones/1/position = Vector3(0, 0.3868798, 0)
+bones/1/rotation = Quaternion(0.0029842798, 0.04315755, 0.00012891818, 0.9990638)
+bones/2/rotation = Quaternion(0.9903982, 0.057741635, 0.071113676, 0.10353881)
+bones/3/rotation = Quaternion(0.30961868, 6.6486e-08, -2.131027e-07, 0.9508608)
+bones/4/rotation = Quaternion(-0.55586076, -0.112951316, 0.046229936, 0.8222675)
+bones/5/rotation = Quaternion(-1.006321e-06, 0.9202346, -0.39136735, 2.7191118e-07)
+bones/6/rotation = Quaternion(0.9959144, -0.030562513, 0.031159883, 0.0790545)
+bones/7/rotation = Quaternion(0.32024357, -6.28126e-08, 2.2214849e-07, 0.94733524)
+bones/8/rotation = Quaternion(-0.58440614, 0.114148326, -0.012615648, 0.8032936)
+bones/10/rotation = Quaternion(0.008341951, 1.8415682e-09, 0.00072206056, 0.99996495)
+bones/11/rotation = Quaternion(-0.00238447, 2.2390851e-09, -0.00020639443, 0.99999714)
+bones/12/rotation = Quaternion(-0.016184768, -0.03133762, -0.0008909933, 0.9993775)
+bones/13/rotation = Quaternion(-0.537554, -0.107248284, -0.76598114, 0.33586672)
+bones/14/rotation = Quaternion(2.118186e-08, -6.1659996e-08, -0.37205127, 0.9282122)
+bones/16/rotation = Quaternion(-0.22084042, -0.34414056, 0.1804802, 0.8945523)
+bones/17/rotation = Quaternion(0.0016477791, 0.0016477973, -0.70103097, 0.71312714)
+bones/18/rotation = Quaternion(-0.5641741, 0.03740167, 0.73077285, 0.38246554)
+bones/19/rotation = Quaternion(-5.0222595e-09, 6.459571e-08, 0.38633925, 0.9223568)
+bones/21/rotation = Quaternion(-0.21121201, 0.38108012, -0.1344666, 0.8899923)
+bones/22/rotation = Quaternion(0.0016477865, -0.0016477898, 0.70103097, 0.71312714)
+
+[node name="Area3D" type="Area3D" parent="Character/Rogue_Hooded" unique_id=445321152 node_paths=PackedStringArray("radice_personaggio", "anim_tree")]
+script = ExtResource("3_a6hu6")
+immagine_pannello = ExtResource("16_24j52")
+radice_personaggio = NodePath("../Rig_Medium/Skeleton3D")
+anim_tree = NodePath("../AnimationTree")
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="Character/Rogue_Hooded/Area3D" unique_id=2039276768]
+transform = Transform3D(1, 0, 0, 0, 1.2636, 0, 0, 0, 1, 0, 0.95, 0)
+shape = SubResource("CapsuleShape3D_vjjst")
+
+[node name="CameraTarget" type="Marker3D" parent="Character/Rogue_Hooded/Area3D" unique_id=444385104]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.2767768, 1.3, 4.223224)
+
+[node name="UI_Selezione" type="CanvasLayer" parent="." unique_id=1437278129]
+
+[node name="ImmagineTitolo" type="TextureRect" parent="UI_Selezione" unique_id=928743864]
+visible = false
+custom_minimum_size = Vector2(275.2, 153.6)
+anchors_preset = 5
+anchor_left = 0.5
+anchor_right = 0.5
+offset_left = -171.00003
+offset_right = 3251.083
+offset_bottom = 1909.9998
+grow_horizontal = 2
+scale = Vector2(0.1, 0.1)
+size_flags_horizontal = 4
+size_flags_vertical = 0
+texture = ExtResource("11_cliai")
+
+[node name="ImmagineDati" type="TextureRect" parent="UI_Selezione" unique_id=1187581983]
+anchors_preset = 11
+anchor_left = 1.0
+anchor_right = 1.0
+anchor_bottom = 1.0
+offset_left = -456.0
+grow_horizontal = 0
+grow_vertical = 2
+expand_mode = 1
+stretch_mode = 4
+
+[node name="BtnIndietro" type="TextureButton" parent="UI_Selezione" unique_id=1066648884]
+visible = false
+anchors_preset = -1
+anchor_left = 0.11100001
+anchor_top = 0.19000001
+anchor_right = 0.11100001
+anchor_bottom = 0.19000001
+offset_left = -50.872
+offset_top = -51.120003
+offset_right = 973.128
+offset_bottom = 972.88
+scale = Vector2(0.1, 0.1)
+texture_normal = ExtResource("12_fv5so")
+texture_pressed = ExtResource("13_7vpm2")
+texture_hover = ExtResource("14_7bdqc")
+stretch_mode = 4
+
+[node name="BtnGioca" type="TextureButton" parent="UI_Selezione" unique_id=2040535258]
+visible = false
+anchors_preset = -1
+anchor_left = 0.11100001
+anchor_top = 0.851
+anchor_right = 0.11100001
+anchor_bottom = 0.851
+offset_left = -103.87201
+offset_top = -103.448
+offset_right = 2867.5564
+offset_bottom = 2858.8376
+scale = Vector2(0.07, 0.07)
+texture_normal = ExtResource("15_xqlda")
+texture_pressed = ExtResource("16_6feai")
+texture_hover = ExtResource("17_kepq8")
+stretch_mode = 4
+
+[node name="SchermoBianco" type="ColorRect" parent="UI_Selezione" unique_id=780832181]
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+mouse_filter = 2
+
+[editable path="Character/Barbarian"]
+[editable path="Character/Knight"]
+[editable path="Character/Mage"]
+[editable path="Character/Ranger"]
+[editable path="Character/Rogue"]
+[editable path="Character/Rogue_Hooded"]
