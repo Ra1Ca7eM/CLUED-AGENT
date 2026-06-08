@@ -1,8 +1,13 @@
 # ===== Godot (game/) =====
-# Import cache + editor data: regenerated automatically when the project
-# is opened in Godot. Source assets and their .import files ARE committed,
-# so textures/animations re-import correctly on a fresh clone.
-.godot/
+# IMPORTANT: the Godot import cache (game/.godot/) is INTENTIONALLY committed.
+# It carries the imported textures/meshes and the .md5 fingerprints that make
+# Godot SKIP re-importing on a fresh clone. Without it, a clone re-imports from
+# scratch and regenerates the save_to_file animation .res with loop_mode=0
+# (loops lost) and rebuilds materials (white objects). So do NOT ignore .godot/.
+#
+# Only the GPU-specific, regenerated shader cache is excluded:
+/game/.godot/shader_cache/
+/game/.godot/mono/
 /game/android/
 
 # ===== JaCaMo / Gradle (mind/) =====

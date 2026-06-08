@@ -48,6 +48,16 @@
 *.scn   binary
 *.ctex  binary
 
+# --- Godot import cache (.godot/) binary outputs ---
+*.mesh        binary
+*.meshlib     binary
+*.fontdata    binary
+*.cache       binary
+*.sample      binary
+*.mp3str      binary
+*.oggvorbisstr binary
+*.lmbake      binary
+
 # --- Java ---
 *.jar   binary
 *.class binary

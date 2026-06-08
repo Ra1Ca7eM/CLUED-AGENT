@@ -1,0 +1,14 @@
+Label3D
+BoneAttachment3D
+Marker3D
+Node3D
+StaticBody3D
+CollisionShape3D
+CSGBox3D
+MeshInstance3D
+Area3D
+CharacterBody3D
+NavigationAgent3D
+CSGCombiner3D
+CSGSphere3D
+OmniLight3D
